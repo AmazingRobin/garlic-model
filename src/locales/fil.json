@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "reports": "Mga Ulat",
+    "techAnalysis": "Pagsusuring Teknikal",
+    "comparison": "Paghahambing",
+    "faq": "FAQ",
+    "about": "Tungkol sa Amin"
+  },
+  "home": {
+    "hero": {
+      "title": "OpenAI Garlic Model",
+      "subtitle": "Ang Alam Natin Sa Ngayon",
+      "description": "Isang independiyenteng third-party na sentro ng impormasyon na nag-iipon ng mga pampublikong ulat, balita sa media, at mga talakayan sa komunidad tungkol sa rumored next-generation AI model ng OpenAI na may codename na \"Garlic\".",
+      "cta": "Tingnan ang mga Ulat",
+      "disclaimer": "Ang website na ito ay hindi kaanib sa OpenAI. Ang impormasyon ay batay sa mga pampublikong ulat at haka-haka."
+    },
+    "overview": {
+      "title": "Pangkalahatang-ideya ng Modelo",
+      "subtitle": "Batay sa Pampublikong Ulat at Haka-haka",
+      "disclaimer": "Ang lahat ng impormasyon ay hindi kumpirmado at batay sa mga third-party na mapagkukunan."
+    },
+    "features": {
+      "title": "Mga Potensyal na Kakayahan",
+      "subtitle": "Naiulat at Haka-hakang mga Tampok"
+    },
+    "timeline": {
+      "title": "Timeline ng mga Ulat",
+      "subtitle": "Pagkakasunod-sunod na Balita"
+    },
+    "useCases": {
+      "title": "Mga Potensyal na Paggamit",
+      "subtitle": "Kung ang modelo ay umiiral at tumutugma sa haka-haka"
+    }
+  },
+  "reports": {
+    "title": "Mga Ulat ng Media at Talakayan",
+    "subtitle": "Pinagsama-samang balita mula sa iba't ibang mapagkukunan",
+    "filter": {
+      "all": "Lahat",
+      "rumor": "Mga Alingasngas",
+      "media": "Ulat ng Media",
+      "speculation": "Haka-haka"
+    },
+    "readMore": "Basahin ang Pinagmulan"
+  },
+  "techAnalysis": {
+    "title": "Pagsusuring Teknikal",
+    "subtitle": "Malalim na pagsusuri batay sa magagamit na impormasyon",
+    "disclaimer": "Ang pagsusuri ay batay sa haka-haka at mga ulat ng media"
+  },
+  "comparison": {
+    "title": "Paghahambing ng Modelo",
+    "subtitle": "Paano maikukumpara ang Garlic sa ibang mga frontier model",
+    "table": {
+      "model": "Modelo",
+      "release": "Paglabas",
+      "strengths": "Mga Lakas",
+      "weaknesses": "Mga Kahinaan",
+      "notes": "Mga Tala"
+    }
+  },
+  "faq": {
+    "title": "Mga Madalas Itanong",
+    "subtitle": "Mga karaniwang tanong tungkol sa Garlic model"
+  },
+  "about": {
+    "title": "Tungkol sa Site na Ito",
+    "subtitle": "Pagtanggi at Impormasyon",
+    "disclaimer": {
+      "title": "Mahalagang Pagtanggi",
+      "content": "Ang website na ito ay isang independiyenteng third-party na site ng impormasyon at HINDI kaanib, ineendorso, o konektado sa OpenAI sa anumang paraan. Ang lahat ng impormasyong ipinakita dito ay batay sa mga pampublikong ulat ng media, online na talakayan, at haka-haka ng komunidad. Wala sa impormasyon tungkol sa \"Garlic\" model ang opisyal na kinumpirma ng OpenAI. Ang site na ito ay nilikha para sa mga layuning pang-impormasyon at pang-edukasyon lamang. Wala kaming ginagawang pag-aangkin tungkol sa katumpakan, pagkakumpleto, o pagiging maaasahan ng impormasyong ipinakita. Palaging i-verify ang impormasyon sa pamamagitan ng mga opisyal na channel ng OpenAI."
+    },
+    "purpose": {
+      "title": "Layunin",
+      "content": "Ang site na ito ay nagsisilbing sentralisadong hub para sa pagsubaybay at pag-aayos ng pampublikong magagamit na impormasyon tungkol sa rumored model ng OpenAI na may codename na \"Garlic\". Layunin naming magbigay ng malinaw, organisadong pananaw sa coverage ng media at mga talakayan sa komunidad habang malinaw na pinag-iiba ang mga kumpirmadong katotohanan at haka-haka."
+    },
+    "sources": {
+      "title": "Mga Pinagmulan ng Impormasyon",
+      "content": "Nag-iipon kami ng impormasyon mula sa mga kagalang-galang na media outlet, mga site ng balita sa teknolohiya, mga komunidad ng pananaliksik, at mga pampublikong forum. Ang lahat ng mga mapagkukunan ay binabanggit at naka-link kung saan posible."
+    },
+    "contact": {
+      "title": "Makipag-ugnayan",
+      "content": "Ito ay isang proyekto ng impormasyon ng komunidad. Kung mayroon kang mga pagwawasto o karagdagang mapagkukunan na imumungkahi, mangyaring mag-ambag nang responsable."
+    }
+  },
+  "footer": {
+    "disclaimer": "Independiyenteng third-party site • Hindi kaanib sa OpenAI",
+    "rights": "Impormasyong nakuha mula sa mga pampublikong mapagkukunan"
+  },
+  "common": {
+    "learnMore": "Matuto Pa",
+    "readMore": "Magbasa Pa",
+    "viewAll": "Tingnan Lahat",
+    "source": "Pinagmulan",
+    "date": "Petsa",
+    "category": "Kategorya",
+    "status": {
+      "confirmed": "Kumpirmado",
+      "rumored": "Alingasngas",
+      "speculated": "Haka-haka"
+    }
+  }
+}

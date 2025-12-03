@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Início",
+    "reports": "Notícias",
+    "techAnalysis": "Análise Técnica",
+    "comparison": "Comparação",
+    "faq": "FAQ",
+    "about": "Sobre"
+  },
+  "home": {
+    "hero": {
+      "title": "Modelo OpenAI Garlic",
+      "subtitle": "O Que Sabemos Até Agora",
+      "description": "Um centro de informações independente de terceiros que agrega relatórios públicos, cobertura da mídia e discussões da comunidade sobre o suposto modelo de IA de próxima geração da OpenAI, codinome \"Garlic\".",
+      "cta": "Ver Relatórios",
+      "disclaimer": "Este site não é afiliado à OpenAI. As informações são baseadas em relatórios públicos e especulações."
+    },
+    "overview": {
+      "title": "Visão Geral do Modelo",
+      "subtitle": "Baseado em Relatórios Públicos e Especulações",
+      "disclaimer": "Todas as informações não são confirmadas e baseadas em fontes de terceiros."
+    },
+    "features": {
+      "title": "Capacidades Potenciais",
+      "subtitle": "Recursos Relatados e Especulados"
+    },
+    "timeline": {
+      "title": "Linha do Tempo dos Relatórios",
+      "subtitle": "Cobertura Cronológica"
+    },
+    "useCases": {
+      "title": "Casos de Uso Potenciais",
+      "subtitle": "Se o modelo existir e corresponder à especulação"
+    }
+  },
+  "reports": {
+    "title": "Relatórios da Mídia e Discussões",
+    "subtitle": "Cobertura agregada de várias fontes",
+    "filter": {
+      "all": "Todos",
+      "rumor": "Rumores",
+      "media": "Relatórios da Mídia",
+      "speculation": "Especulação"
+    },
+    "readMore": "Ler Fonte"
+  },
+  "techAnalysis": {
+    "title": "Análise Técnica",
+    "subtitle": "Análise aprofundada baseada em informações disponíveis",
+    "disclaimer": "Análise baseada em especulação e relatórios da mídia"
+  },
+  "comparison": {
+    "title": "Comparação de Modelos",
+    "subtitle": "Como o Garlic pode se comparar a outros modelos de fronteira",
+    "table": {
+      "model": "Modelo",
+      "release": "Lançamento",
+      "strengths": "Pontos Fortes",
+      "weaknesses": "Pontos Fracos",
+      "notes": "Notas"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Perguntas comuns sobre o modelo Garlic"
+  },
+  "about": {
+    "title": "Sobre Este Site",
+    "subtitle": "Isenção de Responsabilidade e Informações",
+    "disclaimer": {
+      "title": "Isenção de Responsabilidade Importante",
+      "content": "Este site é um site de informações independente de terceiros e NÃO é afiliado, endossado ou conectado à OpenAI de forma alguma. Todas as informações apresentadas aqui são baseadas em relatórios de mídia publicamente disponíveis, discussões online e especulações da comunidade. Nenhuma das informações sobre o modelo \"Garlic\" foi oficialmente confirmada pela OpenAI. Este site foi criado apenas para fins informativos e educacionais. Não fazemos reivindicações sobre a precisão, integridade ou confiabilidade das informações apresentadas. Sempre verifique as informações através dos canais oficiais da OpenAI."
+    },
+    "purpose": {
+      "title": "Propósito",
+      "content": "Este site serve como um centro centralizado para rastrear e organizar informações publicamente disponíveis sobre o suposto modelo da OpenAI, codinome \"Garlic\". Nosso objetivo é fornecer uma visão clara e organizada da cobertura da mídia e das discussões da comunidade, distinguindo claramente entre fatos confirmados e especulações."
+    },
+    "sources": {
+      "title": "Fontes de Informação",
+      "content": "Agregamos informações de meios de comunicação respeitáveis, sites de notícias de tecnologia, comunidades de pesquisa e fóruns públicos. Todas as fontes são citadas e vinculadas sempre que possível."
+    },
+    "contact": {
+      "title": "Contato",
+      "content": "Este é um projeto de informação comunitária. Se você tiver correções ou fontes adicionais para sugerir, contribua de forma responsável."
+    }
+  },
+  "footer": {
+    "disclaimer": "Site independente de terceiros • Não afiliado à OpenAI",
+    "rights": "Informações agregadas de fontes públicas"
+  },
+  "common": {
+    "learnMore": "Saiba Mais",
+    "readMore": "Leia Mais",
+    "viewAll": "Ver Tudo",
+    "source": "Fonte",
+    "date": "Data",
+    "category": "Categoria",
+    "status": {
+      "confirmed": "Confirmado",
+      "rumored": "Rumor",
+      "speculated": "Especulado"
+    }
+  }
+}

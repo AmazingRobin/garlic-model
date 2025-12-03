@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "reports": "Noticias",
+    "techAnalysis": "Análisis Técnico",
+    "comparison": "Comparación",
+    "faq": "FAQ",
+    "about": "Acerca de"
+  },
+  "home": {
+    "hero": {
+      "title": "Modelo OpenAI Garlic",
+      "subtitle": "Lo que sabemos hasta ahora",
+      "description": "Un centro de información independiente de terceros que agrega informes públicos, cobertura mediática y discusiones de la comunidad sobre el rumoreado modelo de IA de próxima generación de OpenAI con nombre en código \"Garlic\".",
+      "cta": "Ver Informes",
+      "disclaimer": "Este sitio web no está afiliado a OpenAI. La información se basa en informes públicos y especulaciones."
+    },
+    "overview": {
+      "title": "Descripción General del Modelo",
+      "subtitle": "Basado en Informes Públicos y Especulaciones",
+      "disclaimer": "Toda la información no está confirmada y se basa en fuentes de terceros."
+    },
+    "features": {
+      "title": "Capacidades Potenciales",
+      "subtitle": "Características Reportadas y Especuladas"
+    },
+    "timeline": {
+      "title": "Cronología de Informes",
+      "subtitle": "Cobertura Cronológica"
+    },
+    "useCases": {
+      "title": "Casos de Uso Potenciales",
+      "subtitle": "Si el modelo existe y coincide con la especulación"
+    }
+  },
+  "reports": {
+    "title": "Informes de Medios y Discusiones",
+    "subtitle": "Cobertura agregada de varias fuentes",
+    "filter": {
+      "all": "Todos",
+      "rumor": "Rumores",
+      "media": "Informes de Medios",
+      "speculation": "Especulación"
+    },
+    "readMore": "Leer Fuente"
+  },
+  "techAnalysis": {
+    "title": "Análisis Técnico",
+    "subtitle": "Análisis en profundidad basado en información disponible",
+    "disclaimer": "Análisis basado en especulación e informes de medios"
+  },
+  "comparison": {
+    "title": "Comparación de Modelos",
+    "subtitle": "Cómo podría compararse Garlic con otros modelos de frontera",
+    "table": {
+      "model": "Modelo",
+      "release": "Lanzamiento",
+      "strengths": "Fortalezas",
+      "weaknesses": "Debilidades",
+      "notes": "Notas"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Preguntas comunes sobre el modelo Garlic"
+  },
+  "about": {
+    "title": "Acerca de este sitio",
+    "subtitle": "Descargo de responsabilidad e información",
+    "disclaimer": {
+      "title": "Descargo de responsabilidad importante",
+      "content": "Este sitio web es un sitio de información independiente de terceros y NO está afiliado, respaldado ni conectado con OpenAI de ninguna manera. Toda la información presentada aquí se basa en informes de medios disponibles públicamente, discusiones en línea y especulaciones de la comunidad. Ninguna de la información sobre el modelo \"Garlic\" ha sido confirmada oficialmente por OpenAI. Este sitio se crea solo con fines informativos y educativos. No hacemos afirmaciones sobre la exactitud, integridad o confiabilidad de la información presentada. Verifique siempre la información a través de los canales oficiales de OpenAI."
+    },
+    "purpose": {
+      "title": "Propósito",
+      "content": "Este sitio sirve como un centro centralizado para rastrear y organizar información disponible públicamente sobre el rumoreado modelo de OpenAI con nombre en código \"Garlic\". Nuestro objetivo es proporcionar una visión clara y organizada de la cobertura de los medios y las discusiones de la comunidad, distinguiendo claramente entre hechos confirmados y especulaciones."
+    },
+    "sources": {
+      "title": "Fuentes de Información",
+      "content": "Agregamos información de medios de comunicación acreditados, sitios de noticias de tecnología, comunidades de investigación y foros públicos. Todas las fuentes se citan y enlazan siempre que sea posible."
+    },
+    "contact": {
+      "title": "Contacto",
+      "content": "Este es un proyecto de información comunitaria. Si tiene correcciones o fuentes adicionales para sugerir, contribuya de manera responsable."
+    }
+  },
+  "footer": {
+    "disclaimer": "Sitio independiente de terceros • No afiliado a OpenAI",
+    "rights": "Información agregada de fuentes públicas"
+  },
+  "common": {
+    "learnMore": "Aprender más",
+    "readMore": "Leer más",
+    "viewAll": "Ver todo",
+    "source": "Fuente",
+    "date": "Fecha",
+    "category": "Categoría",
+    "status": {
+      "confirmed": "Confirmado",
+      "rumored": "Rumoreado",
+      "speculated": "Especulado"
+    }
+  }
+}

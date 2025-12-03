@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "首页",
+    "reports": "新闻报道",
+    "techAnalysis": "技术分析",
+    "comparison": "模型对比",
+    "faq": "常见问题",
+    "about": "关于"
+  },
+  "home": {
+    "hero": {
+      "title": "OpenAI Garlic 模型",
+      "subtitle": "目前我们所知道的一切",
+      "description": "一个独立的第三方信息中心，汇总关于 OpenAI 传闻中代号为 \"Garlic\" 的下一代 AI 模型的公开报道、媒体报道和社区讨论。",
+      "cta": "查看报道",
+      "disclaimer": "本网站不隶属于 OpenAI。信息基于公开报道和推测。"
+    },
+    "overview": {
+      "title": "模型概览",
+      "subtitle": "基于公开报道与推测",
+      "disclaimer": "所有信息均未确认，基于第三方来源。"
+    },
+    "features": {
+      "title": "潜在能力",
+      "subtitle": "报道与推测的功能"
+    },
+    "timeline": {
+      "title": "报道时间线",
+      "subtitle": "按时间顺序的报道"
+    },
+    "useCases": {
+      "title": "潜在应用场景",
+      "subtitle": "如果模型存在且符合推测"
+    }
+  },
+  "reports": {
+    "title": "媒体报道与讨论",
+    "subtitle": "汇总各方来源的报道",
+    "filter": {
+      "all": "全部",
+      "rumor": "传闻",
+      "media": "媒体报道",
+      "speculation": "推测"
+    },
+    "readMore": "阅读来源"
+  },
+  "techAnalysis": {
+    "title": "技术分析",
+    "subtitle": "基于现有信息的深度分析",
+    "disclaimer": "分析基于推测和媒体报道"
+  },
+  "comparison": {
+    "title": "模型对比",
+    "subtitle": "Garlic 与其他前沿模型的对比",
+    "table": {
+      "model": "模型",
+      "release": "发布时间",
+      "strengths": "优势",
+      "weaknesses": "劣势",
+      "notes": "备注"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "关于 Garlic 模型的常见疑问"
+  },
+  "about": {
+    "title": "关于本站",
+    "subtitle": "免责声明与信息",
+    "disclaimer": {
+      "title": "重要免责声明",
+      "content": "本网站是一个独立的第三方信息站点，与 OpenAI 没有任何隶属、认可或关联关系。此处呈现的所有信息均基于公开的媒体报道、在线讨论和社区推测。关于 \"Garlic\" 模型的任何信息均未得到 OpenAI 的官方确认。本网站仅供信息和教育目的使用。我们不对所呈现信息的准确性、完整性或可靠性做出任何声明。请务必通过 OpenAI 官方渠道核实信息。"
+    },
+    "purpose": {
+      "title": "目的",
+      "content": "本站作为一个中心枢纽，用于追踪和整理关于 OpenAI 传闻中代号为 \"Garlic\" 的模型的公开信息。我们旨在提供清晰、有组织的媒体报道和社区讨论视图，同时明确区分已确认的事实和推测。"
+    },
+    "sources": {
+      "title": "信息来源",
+      "content": "我们汇总来自知名媒体、科技新闻网站、研究社区和公共论坛的信息。所有来源均尽可能注明并链接。"
+    },
+    "contact": {
+      "title": "联系我们",
+      "content": "这是一个社区信息项目。如果您有更正或补充来源建议，请负责任地贡献。"
+    }
+  },
+  "footer": {
+    "disclaimer": "独立第三方网站 • 不隶属于 OpenAI",
+    "rights": "信息汇总自公开来源"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "readMore": "阅读更多",
+    "viewAll": "查看全部",
+    "source": "来源",
+    "date": "日期",
+    "category": "分类",
+    "status": {
+      "confirmed": "已确认",
+      "rumored": "传闻",
+      "speculated": "推测"
+    }
+  }
+}

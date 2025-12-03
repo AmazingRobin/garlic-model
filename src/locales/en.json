@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "reports": "Reports",
+    "techAnalysis": "Tech Analysis",
+    "comparison": "Comparison",
+    "faq": "FAQ",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "title": "OpenAI Garlic Model",
+      "subtitle": "What We Know So Far",
+      "description": "An independent, third-party information hub aggregating publicly available reports, media coverage, and community discussions about OpenAI's rumored next-generation AI model codenamed \"Garlic\".",
+      "cta": "View Reports",
+      "disclaimer": "This website is not affiliated with OpenAI. Information is based on public reports and speculation."
+    },
+    "overview": {
+      "title": "Model Overview",
+      "subtitle": "Based on Public Reports & Speculation",
+      "disclaimer": "All information is unconfirmed and based on third-party sources."
+    },
+    "features": {
+      "title": "Potential Capabilities",
+      "subtitle": "Reported & Speculated Features"
+    },
+    "timeline": {
+      "title": "Timeline of Reports",
+      "subtitle": "Chronological Coverage"
+    },
+    "useCases": {
+      "title": "Potential Use Cases",
+      "subtitle": "If the model exists and matches speculation"
+    }
+  },
+  "reports": {
+    "title": "Media Reports & Discussions",
+    "subtitle": "Aggregated coverage from various sources",
+    "filter": {
+      "all": "All",
+      "rumor": "Rumors",
+      "media": "Media Reports",
+      "speculation": "Speculation"
+    },
+    "readMore": "Read Source"
+  },
+  "techAnalysis": {
+    "title": "Technical Analysis",
+    "subtitle": "In-depth analysis based on available information",
+    "disclaimer": "Analysis based on speculation and media reports"
+  },
+  "comparison": {
+    "title": "Model Comparison",
+    "subtitle": "How Garlic might compare to other frontier models",
+    "table": {
+      "model": "Model",
+      "release": "Release",
+      "strengths": "Strengths",
+      "weaknesses": "Weaknesses",
+      "notes": "Notes"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Common questions about the Garlic model"
+  },
+  "about": {
+    "title": "About This Site",
+    "subtitle": "Disclaimer & Information",
+    "disclaimer": {
+      "title": "Important Disclaimer",
+      "content": "This website is an independent, third-party information site and is NOT affiliated with, endorsed by, or connected to OpenAI in any way. All information presented here is based on publicly available media reports, online discussions, and community speculation. None of the information about the \"Garlic\" model has been officially confirmed by OpenAI. This site is created for informational and educational purposes only. We make no claims about the accuracy, completeness, or reliability of the information presented. Always verify information through official OpenAI channels."
+    },
+    "purpose": {
+      "title": "Purpose",
+      "content": "This site serves as a centralized hub for tracking and organizing publicly available information about OpenAI's rumored model codenamed \"Garlic\". We aim to provide a clear, organized view of media coverage and community discussions while clearly distinguishing between confirmed facts and speculation."
+    },
+    "sources": {
+      "title": "Information Sources",
+      "content": "We aggregate information from reputable media outlets, technology news sites, research communities, and public forums. All sources are cited and linked where possible."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "This is a community information project. If you have corrections or additional sources to suggest, please contribute responsibly."
+    }
+  },
+  "footer": {
+    "disclaimer": "Independent third-party site • Not affiliated with OpenAI",
+    "rights": "Information aggregated from public sources"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "source": "Source",
+    "date": "Date",
+    "category": "Category",
+    "status": {
+      "confirmed": "Confirmed",
+      "rumored": "Rumored",
+      "speculated": "Speculated"
+    }
+  }
+}

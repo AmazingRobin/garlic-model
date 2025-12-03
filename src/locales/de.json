@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "reports": "Berichte",
+    "techAnalysis": "Tech-Analyse",
+    "comparison": "Vergleich",
+    "faq": "FAQ",
+    "about": "Über uns"
+  },
+  "home": {
+    "hero": {
+      "title": "OpenAI Garlic Modell",
+      "subtitle": "Was wir bisher wissen",
+      "description": "Ein unabhängiges Informationszentrum, das öffentliche Berichte, Medienberichterstattung und Community-Diskussionen über OpenAIs angebliches KI-Modell der nächsten Generation mit dem Codenamen \"Garlic\" sammelt.",
+      "cta": "Berichte ansehen",
+      "disclaimer": "Diese Website ist nicht mit OpenAI verbunden. Informationen basieren auf öffentlichen Berichten und Spekulationen."
+    },
+    "overview": {
+      "title": "Modellübersicht",
+      "subtitle": "Basierend auf öffentlichen Berichten & Spekulationen",
+      "disclaimer": "Alle Informationen sind unbestätigt und basieren auf Quellen Dritter."
+    },
+    "features": {
+      "title": "Potenzielle Fähigkeiten",
+      "subtitle": "Berichtete & spekulierte Funktionen"
+    },
+    "timeline": {
+      "title": "Zeitachse der Berichte",
+      "subtitle": "Chronologische Berichterstattung"
+    },
+    "useCases": {
+      "title": "Potenzielle Anwendungsfälle",
+      "subtitle": "Falls das Modell existiert und den Spekulationen entspricht"
+    }
+  },
+  "reports": {
+    "title": "Medienberichte & Diskussionen",
+    "subtitle": "Gesammelte Berichterstattung aus verschiedenen Quellen",
+    "filter": {
+      "all": "Alle",
+      "rumor": "Gerüchte",
+      "media": "Medienberichte",
+      "speculation": "Spekulation"
+    },
+    "readMore": "Quelle lesen"
+  },
+  "techAnalysis": {
+    "title": "Technische Analyse",
+    "subtitle": "Tiefgehende Analyse basierend auf verfügbaren Informationen",
+    "disclaimer": "Analyse basiert auf Spekulation und Medienberichten"
+  },
+  "comparison": {
+    "title": "Modellvergleich",
+    "subtitle": "Wie Garlic im Vergleich zu anderen Spitzenmodellen abschneiden könnte",
+    "table": {
+      "model": "Modell",
+      "release": "Veröffentlichung",
+      "strengths": "Stärken",
+      "weaknesses": "Schwächen",
+      "notes": "Anmerkungen"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Häufige Fragen zum Garlic-Modell"
+  },
+  "about": {
+    "title": "Über diese Seite",
+    "subtitle": "Haftungsausschluss & Informationen",
+    "disclaimer": {
+      "title": "Wichtiger Haftungsausschluss",
+      "content": "Diese Website ist eine unabhängige Informationsseite Dritter und ist NICHT mit OpenAI verbunden, wird nicht von OpenAI unterstützt oder steht in irgendeiner Verbindung zu OpenAI. Alle hier präsentierten Informationen basieren auf öffentlich zugänglichen Medienberichten, Online-Diskussionen und Community-Spekulationen. Keine der Informationen über das \"Garlic\"-Modell wurde offiziell von OpenAI bestätigt. Diese Seite wurde ausschließlich zu Informations- und Bildungszwecken erstellt. Wir erheben keinen Anspruch auf die Richtigkeit, Vollständigkeit oder Zuverlässigkeit der präsentierten Informationen. Überprüfen Sie Informationen immer über offizielle OpenAI-Kanäle."
+    },
+    "purpose": {
+      "title": "Zweck",
+      "content": "Diese Seite dient als zentraler Knotenpunkt zur Verfolgung und Organisation öffentlich zugänglicher Informationen über OpenAIs angebliches Modell mit dem Codenamen \"Garlic\". Unser Ziel ist es, einen klaren, organisierten Überblick über die Medienberichterstattung und Community-Diskussionen zu bieten und dabei klar zwischen bestätigten Fakten und Spekulationen zu unterscheiden."
+    },
+    "sources": {
+      "title": "Informationsquellen",
+      "content": "Wir sammeln Informationen von seriösen Medien, Technologie-Nachrichtenseiten, Forschungsgemeinschaften und öffentlichen Foren. Alle Quellen werden zitiert und verlinkt, wo dies möglich ist."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Dies ist ein Community-Informationsprojekt. Wenn Sie Korrekturen oder zusätzliche Quellen vorschlagen möchten, tragen Sie bitte verantwortungsbewusst bei."
+    }
+  },
+  "footer": {
+    "disclaimer": "Unabhängige Seite Dritter • Nicht mit OpenAI verbunden",
+    "rights": "Informationen aus öffentlichen Quellen gesammelt"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "viewAll": "Alle ansehen",
+    "source": "Quelle",
+    "date": "Datum",
+    "category": "Kategorie",
+    "status": {
+      "confirmed": "Bestätigt",
+      "rumored": "Gerücht",
+      "speculated": "Spekuliert"
+    }
+  }
+}
