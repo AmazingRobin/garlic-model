@@ -2,7 +2,7 @@
 
 An independent, third-party information website aggregating publicly available reports, media coverage, and community discussions about OpenAI's rumored next-generation AI model codenamed "Garlic".
 
-🌐 **Live Site**: [garlic-model.com](https://garlic-model.com) (待部署)
+🌐 **Live Site**: [garlic-model.com](https://garlic-model.com)
 
 ## ⚠️ Important Disclaimer
 
