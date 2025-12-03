@@ -213,4 +213,4 @@ Tools:
 
 **项目状态**: ✅ 开发完成，ready for translation and deployment
 
-**最后更新**: 2024-12-03
+**最后更新**: 2025-12-03

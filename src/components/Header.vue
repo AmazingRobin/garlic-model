@@ -1,9 +1,102 @@
+<script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useRouter, useRoute } from 'vue-router'
+import { locales } from '@/data/locales'
+import { loadLocaleMessages } from '@/locales'
+
+const { t, locale } = useI18n()
+const router = useRouter()
+const route = useRoute()
+
+const navLinks = [
+  { path: '#home', label: 'nav.home' },
+  { path: '#reports', label: 'nav.reports' },
+  { path: '#tech-analysis', label: 'nav.techAnalysis' },
+  { path: '#comparison', label: 'nav.comparison' },
+  { path: '#faq', label: 'nav.faq' },
+  { path: '#about', label: 'nav.about' },
+]
+
+const isMobileMenuOpen = ref(false)
+const isLangDropdownOpen = ref(false)
+const langDropdown = ref<HTMLElement | null>(null)
+
+const currentLocale = computed(() => {
+  return locales.find(l => l.code === locale.value) || locales[0]
+})
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value
+  if (isMobileMenuOpen.value) {
+    isLangDropdownOpen.value = false
+  }
+}
+
+const toggleLangDropdown = () => {
+  isLangDropdownOpen.value = !isLangDropdownOpen.value
+  if (isLangDropdownOpen.value) {
+    isMobileMenuOpen.value = false
+  }
+}
+
+const changeLocale = async (code: string) => {
+  await loadLocaleMessages(code as any)
+  locale.value = code
+  isLangDropdownOpen.value = false
+}
+
+const handleNavClick = (path: string) => {
+  // Close mobile menu
+  isMobileMenuOpen.value = false
+  
+  // Extract hash
+  const hash = path
+  
+  // If we are already on home page, just scroll
+  if (route.path === '/') {
+    const element = document.querySelector(hash)
+    if (element) {
+      const headerOffset = 80
+      const elementPosition = element.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+      
+      // Update URL hash without jumping
+      history.pushState(null, '', hash)
+    }
+  } else {
+    // If on another page (shouldn't happen in SPA but good for safety), go to home with hash
+    router.push({ path: '/', hash: hash })
+  }
+}
+
+// Close dropdowns when clicking outside
+const handleClickOutside = (event: MouseEvent) => {
+  if (langDropdown.value && !langDropdown.value.contains(event.target as Node)) {
+    isLangDropdownOpen.value = false
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
+</script>
+
 <template>
   <header class="sticky top-0 z-50 bg-dark-950/80 backdrop-blur-xl border-b border-dark-800">
     <nav class="container-custom py-4">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <router-link to="/" class="flex items-center space-x-3 group">
+        <a href="#home" @click.prevent="handleNavClick('#home')" class="flex items-center space-x-3 group">
           <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center glow-effect-hover transition-all duration-300 group-hover:scale-110">
             <span class="text-2xl">🧄</span>
           </div>
@@ -11,19 +104,19 @@
             <span class="font-display font-bold text-lg gradient-text">Garlic Model</span>
             <span class="text-xs text-gray-500">Unofficial Info Hub</span>
           </div>
-        </router-link>
+        </a>
 
         <!-- Desktop Nav -->
         <div class="hidden md:flex items-center space-x-1">
-          <router-link
+          <a
             v-for="link in navLinks"
             :key="link.path"
-            :to="link.path"
-            class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-dark-800 transition-all duration-200"
-            active-class="bg-dark-800 text-white"
+            :href="link.path"
+            @click.prevent="handleNavClick(link.path)"
+            class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-dark-800 transition-all duration-200 cursor-pointer"
           >
             {{ t(link.label) }}
-          </router-link>
+          </a>
         </div>
 
         <!-- Language Selector & Mobile Menu -->
@@ -95,86 +188,20 @@
       <!-- Mobile Menu -->
       <transition name="slide-down">
         <div v-if="isMobileMenuOpen" class="md:hidden mt-4 pb-4 space-y-2 animate-slide-down">
-          <router-link
+          <a
             v-for="link in navLinks"
             :key="link.path"
-            :to="link.path"
-            @click="closeMobileMenu"
-            class="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-dark-800 transition-all duration-200"
-            active-class="bg-dark-800 text-white"
+            :href="link.path"
+            @click.prevent="handleNavClick(link.path)"
+            class="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-dark-800 transition-all duration-200 cursor-pointer"
           >
             {{ t(link.label) }}
-          </router-link>
+          </a>
         </div>
       </transition>
     </nav>
   </header>
 </template>
-
-<script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useI18n } from 'vue-i18n'
-import { locales } from '@/data/locales'
-import { loadLocaleMessages } from '@/locales'
-
-const { t, locale } = useI18n()
-
-const navLinks = [
-  { path: '/', label: 'nav.home' },
-  { path: '/reports', label: 'nav.reports' },
-  { path: '/tech-analysis', label: 'nav.techAnalysis' },
-  { path: '/comparison', label: 'nav.comparison' },
-  { path: '/faq', label: 'nav.faq' },
-  { path: '/about', label: 'nav.about' },
-]
-
-const isMobileMenuOpen = ref(false)
-const isLangDropdownOpen = ref(false)
-const langDropdown = ref<HTMLElement | null>(null)
-
-const currentLocale = computed(() => {
-  return locales.find(l => l.code === locale.value) || locales[0]
-})
-
-const toggleMobileMenu = () => {
-  isMobileMenuOpen.value = !isMobileMenuOpen.value
-  if (isMobileMenuOpen.value) {
-    isLangDropdownOpen.value = false
-  }
-}
-
-const closeMobileMenu = () => {
-  isMobileMenuOpen.value = false
-}
-
-const toggleLangDropdown = () => {
-  isLangDropdownOpen.value = !isLangDropdownOpen.value
-  if (isLangDropdownOpen.value) {
-    isMobileMenuOpen.value = false
-  }
-}
-
-const changeLocale = async (code: string) => {
-  await loadLocaleMessages(code as any)
-  locale.value = code
-  isLangDropdownOpen.value = false
-}
-
-// Close dropdowns when clicking outside
-const handleClickOutside = (event: MouseEvent) => {
-  if (langDropdown.value && !langDropdown.value.contains(event.target as Node)) {
-    isLangDropdownOpen.value = false
-  }
-}
-
-onMounted(() => {
-  document.addEventListener('click', handleClickOutside)
-})
-
-onUnmounted(() => {
-  document.removeEventListener('click', handleClickOutside)
-})
-</script>
 
 <style scoped>
 .slide-down-enter-active,

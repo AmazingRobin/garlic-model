@@ -18,13 +18,15 @@ export interface Feature {
 }
 
 export interface ModelComparison {
+  id: string
   name: string
-  codename?: string
+  developer: string
   release: string
+  contextWindow: string
   strengths: string[]
   weaknesses: string[]
-  notes: string
-  modelType?: string
+  notes?: string
+  isGarlic: boolean
 }
 
 export interface FAQItem {

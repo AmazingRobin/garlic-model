@@ -1,91 +1,76 @@
 import type { ModelComparison } from '@/types'
 
-export const modelComparisons: ModelComparison[] = [
+export const comparisonData: ModelComparison[] = [
   {
+    id: 'garlic',
     name: 'OpenAI Garlic',
-    codename: 'Garlic (Internal)',
-    release: 'TBA (Rumored Q1 2025)',
+    developer: 'OpenAI',
+    release: '2026 Q1 (Expected)',
+    contextWindow: 'Unknown (Rumored 2M+)',
     strengths: [
-      'Advanced reasoning (reported)',
-      'Superior coding capabilities (reported)',
-      'Enhanced tool use (speculated)',
-      'Improved API integration (reported)'
+      'Advanced Reasoning (Deep Research)',
+      'Specialized Domain Knowledge',
+      'High-Efficiency Pretraining',
+      'Next-gen Agentic Capabilities'
     ],
     weaknesses: [
-      'Unconfirmed capabilities',
-      'No official announcement',
-      'Unknown pricing',
-      'Limited public information'
+      'Unconfirmed existence',
+      'Likely high inference cost',
+      'Limited availability initially'
     ],
-    notes: 'Internal codename, not officially confirmed by OpenAI. All information based on media reports and speculation.',
-    modelType: 'Frontier Model (Rumored)'
+    isGarlic: true
   },
   {
-    name: 'Google Gemini 2.0',
-    release: 'December 2024',
+    id: 'gemini-3',
+    name: 'Google Gemini 3.0',
+    developer: 'Google',
+    release: 'Nov 2025',
+    contextWindow: '2M+',
     strengths: [
-      'Native multimodal architecture',
-      'Deep Google Search integration',
-      'Excellent reasoning capabilities',
-      'Strong performance on benchmarks'
+      'Native Multimodal (Video/3D)',
+      'Deep Think Reasoning',
+      'Google Ecosystem Integration',
+      'Real-time Processing'
     ],
     weaknesses: [
-      'Limited third-party integrations',
-      'Occasional hallucinations',
-      'API pricing concerns'
+      'Inconsistent logic in edge cases',
+      'Strict safety filters'
     ],
-    notes: 'Google\'s latest frontier model with advanced multimodal capabilities.',
-    modelType: 'Multimodal AI'
+    isGarlic: false
   },
   {
-    name: 'Anthropic Claude 3.7',
-    release: 'November 2024',
+    id: 'claude-4-5',
+    name: 'Claude 4.5 Opus',
+    developer: 'Anthropic',
+    release: 'Nov 2025',
+    contextWindow: '500K',
     strengths: [
-      'Excellent safety and alignment',
-      'Strong reasoning and analysis',
-      '200K context window',
-      'Reliable and consistent outputs'
+      'Superior Coding & Engineering',
+      'Complex Instruction Following',
+      'Computer Use / Agentic Tasks',
+      'Nuanced Writing'
     ],
     weaknesses: [
-      'Conservative response style',
-      'Limited multimodal features',
-      'Slower processing speed'
+      'Slower inference speed',
+      'Limited multimodal generation'
     ],
-    notes: 'Known for safety-first approach and reliable performance.',
-    modelType: 'Constitutional AI'
+    isGarlic: false
   },
   {
-    name: 'OpenAI GPT-4.1',
-    release: 'Available',
+    id: 'gpt-4o',
+    name: 'GPT-4o',
+    developer: 'OpenAI',
+    release: 'May 2025',
+    contextWindow: '128K',
     strengths: [
-      'Proven track record',
-      'Wide ecosystem support',
-      'Multimodal capabilities',
-      'Strong general performance'
+      'Voice/Audio Latency',
+      'Balanced Performance',
+      'Widely Available'
     ],
     weaknesses: [
-      'Higher cost',
-      'Occasional inconsistencies',
-      'Limited context compared to newer models'
+      'Outdated reasoning capabilities',
+      'Lower coding benchmarks'
     ],
-    notes: 'Current flagship model from OpenAI, widely adopted.',
-    modelType: 'Large Language Model'
+    isGarlic: false
   },
-  {
-    name: 'Meta Llama 4',
-    release: 'Expected 2025',
-    strengths: [
-      'Open source',
-      'Cost-effective',
-      'Strong community support',
-      'Customizable'
-    ],
-    weaknesses: [
-      'Requires infrastructure',
-      'Self-hosting complexity',
-      'Performance gaps vs proprietary models'
-    ],
-    notes: 'Leading open-source alternative with strong community.',
-    modelType: 'Open Source LLM'
-  }
 ]

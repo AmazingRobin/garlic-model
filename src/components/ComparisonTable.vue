@@ -5,9 +5,9 @@
         <tr class="border-b border-dark-700">
           <th class="px-4 py-4 text-left text-sm font-semibold text-gray-300">{{ t('comparison.table.model') }}</th>
           <th class="px-4 py-4 text-left text-sm font-semibold text-gray-300">{{ t('comparison.table.release') }}</th>
+          <th class="px-4 py-4 text-left text-sm font-semibold text-gray-300">Context</th>
           <th class="px-4 py-4 text-left text-sm font-semibold text-gray-300">{{ t('comparison.table.strengths') }}</th>
           <th class="px-4 py-4 text-left text-sm font-semibold text-gray-300">{{ t('comparison.table.weaknesses') }}</th>
-          <th class="px-4 py-4 text-left text-sm font-semibold text-gray-300">{{ t('comparison.table.notes') }}</th>
         </tr>
       </thead>
       <tbody>
@@ -15,22 +15,19 @@
           v-for="(model, index) in models"
           :key="index"
           class="border-b border-dark-800 hover:bg-dark-800/30 transition-colors duration-200"
-          :class="{ 'bg-primary-500/5': index === 0 }"
+          :class="{ 'bg-primary-500/5': model.isGarlic }"
         >
           <!-- Model Name -->
           <td class="px-4 py-4">
             <div>
               <div class="font-semibold text-white flex items-center space-x-2">
                 <span>{{ model.name }}</span>
-                <span v-if="index === 0" class="px-2 py-0.5 bg-yellow-500/20 text-yellow-300 text-xs rounded-full">
-                  Rumored
+                <span v-if="model.isGarlic" class="px-2 py-0.5 bg-yellow-500/20 text-yellow-300 text-xs rounded-full">
+                  Expected
                 </span>
               </div>
-              <div v-if="model.codename" class="text-xs text-gray-500 mt-1">
-                {{ model.codename }}
-              </div>
-              <div v-if="model.modelType" class="text-xs text-primary-400 mt-1">
-                {{ model.modelType }}
+              <div class="text-xs text-primary-400 mt-1">
+                {{ model.developer }}
               </div>
             </div>
           </td>
@@ -38,6 +35,11 @@
           <!-- Release -->
           <td class="px-4 py-4 text-sm text-gray-400">
             {{ model.release }}
+          </td>
+
+          <!-- Context Window -->
+          <td class="px-4 py-4 text-sm text-gray-400">
+            {{ model.contextWindow }}
           </td>
 
           <!-- Strengths -->
@@ -70,11 +72,6 @@
                 <span>{{ weakness }}</span>
               </li>
             </ul>
-          </td>
-
-          <!-- Notes -->
-          <td class="px-4 py-4 text-sm text-gray-400 max-w-xs">
-            {{ model.notes }}
           </td>
         </tr>
       </tbody>

@@ -12,15 +12,23 @@ export const i18n = createI18n({
 })
 
 // 动态加载其他语言
+// 动态加载其他语言
 export async function loadLocaleMessages(locale: Locale) {
   if (i18n.global.availableLocales.includes(locale as any)) {
     return
   }
 
   try {
-    const messages = await import(`./${locale}.json`)
-    i18n.global.setLocaleMessage(locale, messages.default)
+    const modules = import.meta.glob('./*.json')
+    const path = `./${locale}.json`
+
+    if (modules[path]) {
+      const messages = await modules[path]() as any
+      i18n.global.setLocaleMessage(locale, messages.default)
+    } else {
+      console.warn(`Locale file not found: ${path}`)
+    }
   } catch (e) {
-    console.warn(`Could not load locale: ${locale}`)
+    console.warn(`Could not load locale: ${locale}`, e)
   }
 }
