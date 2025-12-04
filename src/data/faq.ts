@@ -16,7 +16,7 @@ export const faqItems: FAQItem[] = [
   {
     id: 'faq003',
     question: 'When will Garlic be released?',
-    answer: 'There is no official release date. Some sources speculate a potential announcement in Q1 2025, but this remains unverified. OpenAI has not confirmed any timeline for a model associated with this codename.',
+    answer: 'There is no official release date. Some sources speculate a potential announcement in Q1 2026, but this remains unverified. OpenAI has not confirmed any timeline for a model associated with this codename.',
     category: 'release'
   },
   {

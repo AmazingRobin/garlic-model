@@ -3,7 +3,8 @@ import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter, useRoute } from 'vue-router'
 import { locales } from '@/data/locales'
-import { loadLocaleMessages } from '@/locales'
+import Flag from '@/components/Flag.vue'
+
 
 const { t, locale } = useI18n()
 const router = useRouter()
@@ -40,21 +41,25 @@ const toggleLangDropdown = () => {
   }
 }
 
-const changeLocale = async (code: string) => {
-  await loadLocaleMessages(code as any)
-  locale.value = code
+const changeLocale = (code: string) => {
+  // Navigate to the new language URL
+  // We keep the current hash if any
+  const hash = route.hash
+  if (code === 'en') {
+    router.push({ path: '/', hash })
+  } else {
+    router.push({ path: `/${code}/`, hash })
+  }
   isLangDropdownOpen.value = false
 }
 
-const handleNavClick = (path: string) => {
+const handleNavClick = (hash: string) => {
   // Close mobile menu
   isMobileMenuOpen.value = false
   
-  // Extract hash
-  const hash = path
-  
-  // If we are already on home page, just scroll
-  if (route.path === '/') {
+  // Check if we are on a home page (e.g. /en/, /zh/ or /)
+  // The route name is 'home' or 'home-en'
+  if (route.name === 'home' || route.name === 'home-en') {
     const element = document.querySelector(hash)
     if (element) {
       const headerOffset = 80
@@ -70,8 +75,14 @@ const handleNavClick = (path: string) => {
       history.pushState(null, '', hash)
     }
   } else {
-    // If on another page (shouldn't happen in SPA but good for safety), go to home with hash
-    router.push({ path: '/', hash: hash })
+    // If on another page, go to home of current language with hash
+    // Default to 'en' if locale is not available for some reason, but it should be
+    const currentLang = (route.params.lang as string) || 'en'
+    if (currentLang === 'en') {
+      router.push({ path: '/', hash: hash })
+    } else {
+      router.push({ path: `/${currentLang}/`, hash: hash })
+    }
   }
 }
 
@@ -127,7 +138,7 @@ onUnmounted(() => {
               @click="toggleLangDropdown"
               class="flex items-center space-x-2 px-3 py-2 rounded-lg bg-dark-800 hover:bg-dark-700 transition-all duration-200 border border-dark-700"
             >
-              <span class="text-xl">{{ currentLocale?.flag }}</span>
+              <span class="text-xl flex items-center"><Flag :emoji="currentLocale?.flag || '🇺🇸'" /></span>
               <span class="hidden sm:inline text-sm">{{ currentLocale?.name }}</span>
               <svg
                 class="w-4 h-4 transition-transform duration-200"
@@ -153,7 +164,7 @@ onUnmounted(() => {
                   class="w-full px-4 py-2 text-left hover:bg-dark-800 transition-colors duration-150 flex items-center space-x-3"
                   :class="{ 'bg-dark-800': currentLocale?.code === locale.code }"
                 >
-                  <span class="text-xl">{{ locale.flag }}</span>
+                  <span class="text-xl flex items-center"><Flag :emoji="locale.flag" /></span>
                   <span class="text-sm">{{ locale.name }}</span>
                 </button>
               </div>

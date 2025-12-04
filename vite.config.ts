@@ -2,20 +2,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Sitemap from 'vite-plugin-sitemap'
 
-const routes = [
-  '/',
-  '/reports',
-  '/tech-analysis',
-  '/comparison',
-  '/faq',
-  '/about',
-]
-
 // 生成多语言路由
 const languages = ['en', 'zh', 'ja', 'ru', 'ko', 'fil', 'pt', 'de', 'fr', 'es']
-const allRoutes = routes.flatMap(route =>
-  languages.map(lang => lang === 'en' ? route : `/${lang}${route}`)
-)
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -23,7 +11,7 @@ export default defineConfig({
     vue(),
     Sitemap({
       hostname: 'https://garlic-model.com',
-      dynamicRoutes: allRoutes,
+      dynamicRoutes: languages.map(lang => lang === 'en' ? '/' : `/${lang}/`),
       readable: true,
     }),
   ],
@@ -37,4 +25,16 @@ export default defineConfig({
     port: 5173,
     strictPort: false,
   },
+  // @ts-ignore - vite-ssg options
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    includedRoutes() {
+      // Generate routes for all languages
+      return languages.map(lang => lang === 'en' ? '/' : `/${lang}/`)
+    },
+    onFinished() {
+      console.log('SSG build finished!')
+    }
+  }
 })
