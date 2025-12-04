@@ -10,7 +10,7 @@ const router = createRouter({
       name: 'home',
       component: Home,
       meta: {
-        title: 'OpenAI Garlic Model - Unofficial Info Hub',
+        title: 'OpenAI Garlic Model - The Next Leap in AI Reasoning and Coding',
         description: 'Latest news, rumors, and technical analysis about OpenAI\'s upcoming Garlic model.'
       }
     },

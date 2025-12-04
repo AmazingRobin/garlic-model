@@ -102,7 +102,7 @@ onUnmounted(() => {
           </div>
           <div class="flex flex-col">
             <span class="font-display font-bold text-lg gradient-text">Garlic Model</span>
-            <span class="text-xs text-gray-500">Unofficial Info Hub</span>
+            <span class="text-xs text-gray-500">The Next Leap in AI Reasoning and Coding</span>
           </div>
         </a>
 

@@ -92,7 +92,7 @@ const scrollToSection = (id: string) => {
 onMounted(() => {
   // Update SEO
   updateMetaTags({
-    title: 'OpenAI Garlic Model - Unofficial Info Hub | Release Date & Specs',
+    title: 'OpenAI Garlic Model - The Next Leap in AI Reasoning and Coding | Release Date & Specs',
     description: 'Comprehensive guide to OpenAI\'s rumored Garlic model. Release date (2026 Q1), specs, comparison with Gemini 3.0 & Claude 4.5, and latest news.',
     url: 'https://garlic-model.com',
     type: 'website'
