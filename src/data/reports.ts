@@ -2,73 +2,63 @@ import type { Report } from '@/types'
 
 export const reports: Report[] = [
   {
-    id: 'r001',
-    title: 'OpenAI\'s Next Frontier Model Code-Named "Garlic" Leaked on Reddit',
-    source: 'Reddit',
-    sourceUrl: 'https://www.reddit.com/r/OpenAI/',
-    date: '2025-11-15',
-    category: 'rumor',
-    excerpt: 'A Reddit user claims to have insider information about OpenAI\'s upcoming model codenamed "Garlic", suggesting it focuses on enhanced reasoning and coding capabilities.',
-    tags: ['codename', 'reddit', 'leak']
+    id: 'r20251204-1',
+    title: 'OpenAI Declares "Code Red" and Goes All Systems "Garlic"',
+    source: 'The Neuron Daily',
+    sourceUrl: 'https://theneurondaily.com/p/openai-declares-code-red-and-goes-all-systems-garlic',
+    date: '2025-12-04',
+    category: 'media',
+    excerpt: 'OpenAI declared "Code Red" in response to Google\'s Gemini 3.0. But they\'re not just playing defense - they\'re building a new model codenamed "Garlic" that\'s reportedly performing well against both Gemini 3 and Anthropic\'s Opus 4.5 in internal tests.',
+    tags: ['code-red', 'competition', 'gemini-3']
   },
   {
-    id: 'r002',
-    title: 'The Information Reports OpenAI Testing Advanced Reasoning Model',
+    id: 'r20251204-2',
+    title: 'OpenAI CEO Declares "Code Red" to Combat Threats to ChatGPT',
     source: 'The Information',
-    sourceUrl: 'https://www.theinformation.com',
-    date: '2025-11-20',
-    category: 'media',
-    excerpt: 'According to The Information, OpenAI is internally testing a new model with significantly improved reasoning capabilities, though the company has not confirmed the "Garlic" codename.',
-    tags: ['reasoning', 'testing', 'the-information']
-  },
-  {
-    id: 'r003',
-    title: 'Indian Express: OpenAI Preparing Response to Google Gemini 2.0',
-    source: 'Indian Express',
-    sourceUrl: 'https://indianexpress.com',
-    date: '2025-11-25',
-    category: 'media',
-    excerpt: 'Indian Express reports that OpenAI is developing a competitive model to rival Google\'s Gemini 2.0, with enhanced multimodal capabilities and improved coding performance.',
-    tags: ['competition', 'gemini', 'multimodal']
-  },
-  {
-    id: 'r004',
-    title: 'Seeking Alpha: OpenAI\'s Strategic Move Against Google',
-    source: 'Seeking Alpha',
-    sourceUrl: 'https://seekingalpha.com',
-    date: '2025-11-28',
-    category: 'speculation',
-    excerpt: 'Financial analysts speculate that OpenAI\'s rumored new model could be a strategic response to increasing competition from Google and Anthropic in the AI reasoning space.',
-    tags: ['strategy', 'analysis', 'market']
-  },
-  {
-    id: 'r005',
-    title: 'Singularity Community Discusses Garlic Model Capabilities',
-    source: 'Singularity Hub',
-    sourceUrl: 'https://singularityhub.com',
+    sourceUrl: 'https://www.theinformation.com/articles/openai-ceo-declares-code-red-combat-threats-chatgpt-delays-ads-effort',
     date: '2025-12-01',
-    category: 'speculation',
-    excerpt: 'The AI research community on Singularity Hub debates the potential capabilities of the rumored Garlic model, including advanced tool use and agentic workflows.',
-    tags: ['community', 'capabilities', 'speculation']
+    category: 'media',
+    excerpt: 'Sam Altman\'s internal memo requested the team freeze all non-essential projects like shopping agents, health tools, and advertising, to focus everything on making ChatGPT better.',
+    tags: ['code-red', 'memo', 'chatgpt']
   },
   {
-    id: 'r006',
-    title: 'TechCrunch: Unnamed Sources Hint at Q1 2025 Release',
-    source: 'TechCrunch',
-    sourceUrl: 'https://techcrunch.com',
-    date: '2025-12-02',
-    category: 'rumor',
-    excerpt: 'Anonymous sources suggest OpenAI may announce a new model in Q1 2025, though the connection to the "Garlic" codename remains unverified.',
-    tags: ['release', 'timeline', 'q1-2025']
-  },
-  {
-    id: 'r007',
-    title: 'VentureBeat: Focus on Developer Tools and API Improvements',
-    source: 'VentureBeat',
-    sourceUrl: 'https://venturebeat.com',
+    id: 'r20251204-3',
+    title: 'OpenAI Is Secretly Fast-Tracking "Garlic" to Fix ChatGPT\'s Biggest Flaws',
+    source: 'ZDNet',
+    sourceUrl: 'https://www.zdnet.com/article/openai-is-secretly-fast-tracking-garlic-to-fix-chatgpts-biggest-flaws-what-we-know/',
     date: '2025-12-03',
     category: 'media',
-    excerpt: 'VentureBeat reports that OpenAI\'s upcoming model will prioritize developer experience with improved API capabilities and better tool integration.',
-    tags: ['developers', 'api', 'tools']
+    excerpt: 'OpenAI\'s new "Garlic" model introduces major improvements in pretraining, enabling the team to fit the knowledge of large models into much smaller architectures. We might see it drop as GPT-5.2 or GPT-5.5 early next year.',
+    tags: ['garlic', 'efficiency', 'gpt-5']
+  },
+  {
+    id: 'r20251204-4',
+    title: 'Garlic: OpenAI\'s New Small Model That Beats Gemini 3 & Opus 4.5 in Coding',
+    source: 'Reddit r/OpenAI',
+    sourceUrl: 'https://www.reddit.com/r/OpenAI/comments/1pcd296/garlic_openais_new_small_model_that_beats_gemini/',
+    date: '2025-12-04',
+    category: 'rumor',
+    excerpt: 'In internal tests, Garlic reportedly outperforms both Google\'s Gemini 3 and Anthropic\'s Opus 4.5 in coding and reasoning tasks. This model addresses structural issues found in earlier versions like GPT-4.5.',
+    tags: ['benchmark', 'coding', 'reasoning']
+  },
+  {
+    id: 'r20251204-5',
+    title: 'OpenAI Code Red: Google and Anthropic Competition Heats Up',
+    source: 'CNBC',
+    sourceUrl: 'https://www.cnbc.com/2025/12/02/open-ai-code-red-google-anthropic.html',
+    date: '2025-12-02',
+    category: 'media',
+    excerpt: 'OpenAI\'s memo requested the team freeze all non-essential projects and focus everything on making ChatGPT better. Gemini 3 topped industry benchmarks when it launched last month.',
+    tags: ['code-red', 'google', 'anthropic']
+  },
+  {
+    id: 'r20251204-6',
+    title: 'Salesforce CEO Marc Benioff: "I\'m Not Going Back" After Trying Gemini 3',
+    source: 'Axios',
+    sourceUrl: 'https://www.axios.com/2025/11/25/google-gemini-openai-chatgpt-anthropic-claude',
+    date: '2025-11-25',
+    category: 'media',
+    excerpt: 'Salesforce CEO Marc Benioff publicly endorsed Google\'s Gemini 3, putting pressure on OpenAI. ChatGPT still has 800M weekly users compared to Gemini\'s 650M monthly users.',
+    tags: ['gemini-3', 'competition', 'endorsement']
   }
 ]

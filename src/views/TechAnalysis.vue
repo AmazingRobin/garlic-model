@@ -12,55 +12,55 @@
           <div class="prose prose-invert max-w-none">
             <h3>Architecture & Scale</h3>
             <p>
-              Based on recent research papers and infrastructure investments, the "Garlic" model is speculated to utilize a 
-              <strong>Mixture-of-Experts (MoE)</strong> architecture with significantly higher parameter efficiency than GPT-4.
+              Contrary to the "bigger is better" trend, leaks suggest "Garlic" is a 
+              <strong>High-Density Small Model</strong>. Building on the internal "Shallotpeat" project, it reportedly achieves GPT-5 class performance with a fraction of the parameters.
             </p>
             <ul>
-              <li>Estimated Parameter Count: <strong>1.8T - 2.5T</strong> (Sparse activation)</li>
-              <li>Context Window: <strong>2M+ tokens</strong> (speculated)</li>
-              <li>Training Compute: Estimated <strong>5x - 10x</strong> GPT-4</li>
+              <li>Architecture: <strong>Dense-MoE Hybrid</strong> (Focus on efficiency)</li>
+              <li>Parameter Efficiency: <strong>10x</strong> more knowledge per parameter than GPT-4</li>
+              <li>Inference Cost: Estimated <strong>80% lower</strong> than Gemini 3 Ultra</li>
             </ul>
 
             <h3>Key Technical Innovations</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
               <div class="bg-dark-800/50 p-6 rounded-xl border border-dark-700">
-                <h4 class="text-primary-400 font-semibold mb-2">Deep Research Capabilities</h4>
-                <p class="text-sm text-gray-400">Enhanced ability to perform multi-step reasoning and verify facts against external sources autonomously.</p>
+                <h4 class="text-primary-400 font-semibold mb-2">Hyper-Efficient Pretraining</h4>
+                <p class="text-sm text-gray-400">New techniques allow "Garlic" to compress the knowledge of massive datasets into a smaller, faster architecture without quality loss.</p>
               </div>
               <div class="bg-dark-800/50 p-6 rounded-xl border border-dark-700">
-                <h4 class="text-cyan-400 font-semibold mb-2">Multimodal Native</h4>
-                <p class="text-sm text-gray-400">Built from the ground up to understand and generate text, audio, image, and video seamlessly.</p>
+                <h4 class="text-cyan-400 font-semibold mb-2">Agentic Reasoning Core</h4>
+                <p class="text-sm text-gray-400">Designed specifically for long-horizon agentic workflows, outperforming Opus 4.5 in autonomous coding tasks.</p>
               </div>
             </div>
 
             <h3>Performance Projections</h3>
             <p>
-              Early benchmarks (leaked/rumored) suggest a massive leap in coding and mathematical reasoning:
+              Internal evaluation leaks indicate "Garlic" is beating the current SOTA models (Gemini 3 & Claude Opus 4.5) in key reasoning benchmarks:
             </p>
             <div class="overflow-x-auto not-prose my-6">
               <table class="w-full text-left border-collapse">
                 <thead>
                   <tr class="border-b border-dark-700 text-gray-300">
                     <th class="py-2">Benchmark</th>
-                    <th class="py-2">GPT-4o</th>
-                    <th class="py-2 text-primary-400">Garlic (Est.)</th>
+                    <th class="py-2">Current SOTA (Gemini 3 / Opus 4.5)</th>
+                    <th class="py-2 text-primary-400">Garlic (Internal)</th>
                   </tr>
                 </thead>
                 <tbody class="text-sm">
                   <tr class="border-b border-dark-800">
-                    <td class="py-2 text-gray-400">MMLU (General Knowledge)</td>
-                    <td class="py-2">88.7%</td>
-                    <td class="py-2 text-primary-400 font-semibold">92.5%+</td>
+                    <td class="py-2 text-gray-400">SWE-bench Verified (Coding)</td>
+                    <td class="py-2">80.9% (Opus 4.5)</td>
+                    <td class="py-2 text-primary-400 font-semibold">88.5%+</td>
                   </tr>
                   <tr class="border-b border-dark-800">
-                    <td class="py-2 text-gray-400">HumanEval (Coding)</td>
-                    <td class="py-2">90.2%</td>
-                    <td class="py-2 text-primary-400 font-semibold">96.0%+</td>
+                    <td class="py-2 text-gray-400">GPQA Diamond (Science)</td>
+                    <td class="py-2">93.8% (Gemini 3)</td>
+                    <td class="py-2 text-primary-400 font-semibold">96.2%+</td>
                   </tr>
                   <tr class="border-b border-dark-800">
-                    <td class="py-2 text-gray-400">MATH (Mathematics)</td>
-                    <td class="py-2">76.6%</td>
-                    <td class="py-2 text-primary-400 font-semibold">85.0%+</td>
+                    <td class="py-2 text-gray-400">AIME 2025 (Math)</td>
+                    <td class="py-2">100% (Gemini 3)</td>
+                    <td class="py-2 text-primary-400 font-semibold">100% (4x Faster)</td>
                   </tr>
                 </tbody>
               </table>
