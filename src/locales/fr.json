@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Modèle OpenAI Garlic - Le prochain bond en avant du raisonnement et du codage IA",
+    "description": "Guide complet sur le modèle Garlic supposé d'OpenAI. Date de sortie, spécifications, comparaison avec Gemini 3.0 & Claude 4.5, et dernières nouvelles."
+  },
   "nav": {
     "home": "Accueil",
     "reports": "Rapports",

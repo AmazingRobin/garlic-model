@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "OpenAI Garlic Model - Ang Susunod na Paglukso sa AI Reasoning at Coding",
+    "description": "Komprehensibong gabay sa rumored Garlic model ng OpenAI. Petsa ng paglabas, specs, paghahambing sa Gemini 3.0 & Claude 4.5, at pinakabagong balita."
+  },
   "nav": {
     "home": "Home",
     "reports": "Mga Ulat",

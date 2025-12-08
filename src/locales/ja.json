@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "OpenAI Garlic モデル - AI推論とコーディングにおける次なる飛躍",
+    "description": "OpenAIの噂のGarlicモデルに関する包括的なガイド。リリース日、スペック、Gemini 3.0やClaude 4.5との比較、最新ニュース。"
+  },
   "nav": {
     "home": "ホーム",
     "reports": "レポート",

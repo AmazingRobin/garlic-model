@@ -81,7 +81,7 @@ import FAQ from '@/views/FAQ.vue'
 import About from '@/views/About.vue'
 import { updateMetaTags, injectSchema, generateArticleSchema } from '@/utils/seo'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const route = useRoute()
 
 const scrollToSection = (id: string) => {
@@ -116,11 +116,21 @@ onMounted(() => {
   }
 
   // Update SEO
-  updateMetaTags({
-    title: 'OpenAI Garlic Model - The Next Leap in AI Reasoning and Coding | Release Date & Specs',
-    description: 'Comprehensive guide to OpenAI\'s rumored Garlic model. Release date (2026 Q1), specs, comparison with Gemini 3.0 & Claude 4.5, and latest news.',
-    url: 'https://garlic-model.com',
-    type: 'website'
+  // Update SEO
+  const updateSEO = () => {
+    updateMetaTags({
+      title: t('meta.title'),
+      description: t('meta.description'),
+      url: 'https://garlic-model.com',
+      type: 'website'
+    })
+  }
+
+  updateSEO()
+
+  // Watch for locale changes to update SEO
+  watch(() => locale.value, () => {
+    updateSEO()
   })
 
   // Add Article Schema

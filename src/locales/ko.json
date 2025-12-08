@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "OpenAI Garlic 모델 - AI 추론 및 코딩의 차세대 도약",
+    "description": "OpenAI의 소문난 Garlic 모델에 대한 포괄적인 가이드. 출시일, 사양, Gemini 3.0 및 Claude 4.5와의 비교, 최신 뉴스."
+  },
   "nav": {
     "home": "홈",
     "reports": "보도 자료",
