@@ -24,12 +24,12 @@
           <h3 class="font-semibold text-white mb-4">Quick Links</h3>
           <ul class="space-y-2">
             <li v-for="link in quickLinks" :key="link.path">
-              <a
-                :href="link.path"
+              <router-link
+                :to="link.path"
                 class="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-sm"
               >
                 {{ t(link.label) }}
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -65,12 +65,12 @@
               </a>
             </li>
             <li>
-              <a
-                href="#about"
+              <router-link
+                to="/#about"
                 class="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-sm"
               >
                 Disclaimer
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -93,12 +93,12 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const quickLinks = [
-  { path: '#home', label: 'nav.home' },
-  { path: '#reports', label: 'nav.reports' },
-  { path: '#tech-analysis', label: 'nav.techAnalysis' },
-  { path: '#comparison', label: 'nav.comparison' },
-  { path: '#faq', label: 'nav.faq' },
-  { path: '#about', label: 'nav.about' },
+  { path: '/', label: 'nav.home' },
+  { path: '/reports', label: 'nav.reports' },
+  { path: '/#tech-analysis', label: 'nav.techAnalysis' },
+  { path: '/#comparison', label: 'nav.comparison' },
+  { path: '/#faq', label: 'nav.faq' },
+  { path: '/#about', label: 'nav.about' },
 ]
 
 const currentYear = computed(() => new Date().getFullYear())

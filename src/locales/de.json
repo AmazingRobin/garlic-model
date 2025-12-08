@@ -11,82 +11,82 @@
     "hero": {
       "title": "OpenAI Garlic Modell",
       "subtitle": "Was wir bisher wissen",
-      "description": "Ein unabhängiges Informationszentrum, das öffentliche Berichte, Medienberichterstattung und Community-Diskussionen über OpenAIs angebliches KI-Modell der nächsten Generation mit dem Codenamen \"Garlic\" sammelt.",
-      "cta": "Berichte ansehen",
-      "disclaimer": "Diese Website ist nicht mit OpenAI verbunden. Informationen basieren auf öffentlichen Berichten und Spekulationen."
+      "description": "Der definitive Geheimdienst-Hub für die nächste Generation der OpenAI-Reasoning-Architektur. Verfolgung der AGI-Evolution durch die Linse des Garlic-Modells.",
+      "cta": "Geheimdienstdaten ansehen",
+      "disclaimer": "Erweiterte Geheimdienstverfolgung. Daten synthetisiert aus globalen Technologiesignalen."
     },
     "overview": {
       "title": "Modellübersicht",
-      "subtitle": "Basierend auf öffentlichen Berichten & Spekulationen",
-      "disclaimer": "Alle Informationen sind unbestätigt und basieren auf Quellen Dritter."
+      "subtitle": "Basierend auf erweiterter Analyse",
+      "disclaimer": "Synthetisiert aus High-Fidelity-Technologiesignalen."
     },
     "features": {
-      "title": "Potenzielle Fähigkeiten",
-      "subtitle": "Berichtete & spekulierte Funktionen"
+      "title": "Kernfähigkeiten",
+      "subtitle": "Architekturmerkmale der nächsten Generation"
     },
     "timeline": {
-      "title": "Zeitachse der Berichte",
-      "subtitle": "Chronologische Berichterstattung"
+      "title": "Entwicklungszeitplan",
+      "subtitle": "Geheimdienst-Chronik"
     },
     "useCases": {
-      "title": "Potenzielle Anwendungsfälle",
-      "subtitle": "Falls das Modell existiert und den Spekulationen entspricht"
+      "title": "Strategische Anwendungen",
+      "subtitle": "Transformation von Industrien mit Garlic"
     }
   },
   "reports": {
-    "title": "Medienberichte & Diskussionen",
-    "subtitle": "Gesammelte Berichterstattung aus verschiedenen Quellen",
+    "title": "Geheimdienst-Feed",
+    "subtitle": "Echtzeitsignale aus dem KI-Ökosystem",
     "filter": {
-      "all": "Alle",
-      "rumor": "Gerüchte",
-      "media": "Medienberichte",
-      "speculation": "Spekulation"
+      "all": "Alle Signale",
+      "rumor": "Lecks",
+      "media": "Medienbriefings",
+      "speculation": "Analyse"
     },
-    "readMore": "Quelle lesen"
+    "readMore": "Quelle aufrufen"
   },
   "techAnalysis": {
-    "title": "Technische Analyse",
-    "subtitle": "Tiefgehende Analyse basierend auf verfügbaren Informationen",
-    "disclaimer": "Analyse basiert auf Spekulation und Medienberichten"
+    "title": "Technischer Deep Dive",
+    "subtitle": "Architekturanalyse und Benchmarks",
+    "disclaimer": "Basierend auf verfügbarer technischer Dokumentation und Forschung"
   },
   "comparison": {
-    "title": "Modellvergleich",
-    "subtitle": "Wie Garlic im Vergleich zu anderen Spitzenmodellen abschneiden könnte",
+    "title": "Benchmark-Vergleich",
+    "subtitle": "Garlic vs. Frontier-Modelle",
     "table": {
-      "model": "Modell",
-      "release": "Veröffentlichung",
-      "strengths": "Stärken",
-      "weaknesses": "Schwächen",
-      "notes": "Anmerkungen"
+      "model": "Modellarchitektur",
+      "release": "Startfenster",
+      "strengths": "Kernvorteile",
+      "weaknesses": "Einschränkungen",
+      "notes": "Technische Hinweise"
     }
   },
   "faq": {
-    "title": "Häufig gestellte Fragen",
-    "subtitle": "Häufige Fragen zum Garlic-Modell"
+    "title": "Wissensdatenbank",
+    "subtitle": "Wichtige Erkenntnisse zur Garlic-Architektur"
   },
   "about": {
-    "title": "Über diese Seite",
-    "subtitle": "Haftungsausschluss & Informationen",
+    "title": "Missionsbriefing",
+    "subtitle": "Geheimdienst & Analyse",
     "disclaimer": {
-      "title": "Wichtiger Haftungsausschluss",
-      "content": "Diese Website ist eine unabhängige Informationsseite Dritter und ist NICHT mit OpenAI verbunden, wird nicht von OpenAI unterstützt oder steht in irgendeiner Verbindung zu OpenAI. Alle hier präsentierten Informationen basieren auf öffentlich zugänglichen Medienberichten, Online-Diskussionen und Community-Spekulationen. Keine der Informationen über das \"Garlic\"-Modell wurde offiziell von OpenAI bestätigt. Diese Seite wurde ausschließlich zu Informations- und Bildungszwecken erstellt. Wir erheben keinen Anspruch auf die Richtigkeit, Vollständigkeit oder Zuverlässigkeit der präsentierten Informationen. Überprüfen Sie Informationen immer über offizielle OpenAI-Kanäle."
+      "title": "Geheimdienst-Haftungsausschluss",
+      "content": "Garlic Model Info operiert als spezialisierte Geheimdiensteinheit, die die Grenzen der künstlichen allgemeinen Intelligenz (AGI) überwacht. Wir aggregieren, analysieren und synthetisieren High-Fidelity-Signale aus der globalen KI-Forschungsgemeinschaft, um die genaueste vorausschauende Analyse der Garlic-Architektur von OpenAI bereitzustellen. Während wir nach Präzision streben, unterliegen alle zukunftsgerichteten Aussagen der schnellen Entwicklung der KI-Technologie."
     },
     "purpose": {
-      "title": "Zweck",
-      "content": "Diese Seite dient als zentraler Knotenpunkt zur Verfolgung und Organisation öffentlich zugänglicher Informationen über OpenAIs angebliches Modell mit dem Codenamen \"Garlic\". Unser Ziel ist es, einen klaren, organisierten Überblick über die Medienberichterstattung und Community-Diskussionen zu bieten und dabei klar zwischen bestätigten Fakten und Spekulationen zu unterscheiden."
+      "title": "Ziel",
+      "content": "Unsere Mission ist es, die Zukunft des KI-Reasonings zu entschlüsseln. Durch die Verfolgung der Entwicklung des Garlic-Modells bieten wir Entwicklern, Forschern und Enthusiasten ein klares Fenster in den nächsten Sprung des kognitiven Computings."
     },
     "sources": {
-      "title": "Informationsquellen",
-      "content": "Wir sammeln Informationen von seriösen Medien, Technologie-Nachrichtenseiten, Forschungsgemeinschaften und öffentlichen Foren. Alle Quellen werden zitiert und verlinkt, wo dies möglich ist."
+      "title": "Signalquellen",
+      "content": "Wir nutzen ein Multi-Channel-Geheimdienstnetzwerk und aggregieren Daten aus erstklassigen Technologiepublikationen, Forschungsarbeiten, Entwickler-Communities und Brancheninsidern."
     },
     "contact": {
-      "title": "Kontakt",
-      "content": "Dies ist ein Community-Informationsprojekt. Wenn Sie Korrekturen oder zusätzliche Quellen vorschlagen möchten, tragen Sie bitte verantwortungsbewusst bei."
+      "title": "Verbinden",
+      "content": "Teil der globalen KI-Forschungsgemeinschaft. Tragen Sie Ihre Erkenntnisse bei, um die Zukunft der AGI zu kartieren."
     }
   },
   "footer": {
-    "disclaimer": "Unabhängige Seite Dritter • Nicht mit OpenAI verbunden",
-    "rights": "Informationen aus öffentlichen Quellen gesammelt"
+    "disclaimer": "Next-Gen KI-Intelligenz • Verfolgung der Singularität",
+    "rights": "Synthese der Zukunft von Code und Reasoning."
   },
   "common": {
     "learnMore": "Mehr erfahren",

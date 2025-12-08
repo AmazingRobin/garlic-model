@@ -1,4 +1,3 @@
-
 import { createRouter, createWebHistory, createMemoryHistory, type RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
 
@@ -10,6 +9,15 @@ export const routes: RouteRecordRaw[] = [
     meta: {
       title: 'OpenAI Garlic Model - The Next Leap in AI Reasoning and Coding',
       description: 'Latest news, rumors, and technical analysis about OpenAI\'s upcoming Garlic model.'
+    }
+  },
+  {
+    path: '/reports',
+    name: 'all-reports',
+    component: () => import('@/views/AllReports.vue'),
+    meta: {
+      title: 'OpenAI Garlic Model - Reports',
+      description: 'Detailed reports and analysis about OpenAI\'s upcoming Garlic model.'
     }
   },
   {
@@ -43,7 +51,6 @@ export const routes: RouteRecordRaw[] = [
     redirect: to => ({ path: `/${to.params.lang}/`, hash: '#about' })
   },
   // English section redirects
-  { path: '/reports', redirect: { path: '/', hash: '#reports' } },
   { path: '/tech-analysis', redirect: { path: '/', hash: '#tech-analysis' } },
   { path: '/comparison', redirect: { path: '/', hash: '#comparison' } },
   { path: '/faq', redirect: { path: '/', hash: '#faq' } },
@@ -70,7 +77,7 @@ const router = createRouter({
       return savedPosition
     }
     return { top: 0 }
-  },
+  }
 })
 
 // 更新页面标题和meta

@@ -11,82 +11,82 @@
     "hero": {
       "title": "OpenAI Garlic 모델",
       "subtitle": "현재까지 알려진 내용",
-      "description": "OpenAI의 차세대 AI 모델(코드명 \"Garlic\")에 대한 공개 보고서, 언론 보도 및 커뮤니티 토론을 집계하는 독립적인 제3자 정보 허브입니다.",
-      "cta": "보고서 보기",
-      "disclaimer": "이 웹사이트는 OpenAI와 제휴하지 않았습니다. 정보는 공개 보고서 및 추측에 기반합니다."
+      "description": "OpenAI 차세대 추론 아키텍처의 결정적 인텔리전스 허브. Garlic 모델을 통해 AGI의 진화를 추적합니다.",
+      "cta": "인텔리전스 보기",
+      "disclaimer": "고급 인텔리전스 추적. 글로벌 기술 신호에서 종합된 데이터."
     },
     "overview": {
       "title": "모델 개요",
-      "subtitle": "공개 보고서 및 추측 기반",
-      "disclaimer": "모든 정보는 확인되지 않았으며 제3자 출처에 기반합니다."
+      "subtitle": "고급 분석 기반",
+      "disclaimer": "고충실도 기술 신호에서 종합."
     },
     "features": {
-      "title": "잠재적 기능",
-      "subtitle": "보고 및 추측된 기능"
+      "title": "핵심 기능",
+      "subtitle": "차세대 아키텍처 특성"
     },
     "timeline": {
-      "title": "보고서 타임라인",
-      "subtitle": "시간순 보도"
+      "title": "개발 타임라인",
+      "subtitle": "인텔리전스 연대기"
     },
     "useCases": {
-      "title": "잠재적 사용 사례",
-      "subtitle": "모델이 존재하고 추측과 일치하는 경우"
+      "title": "전략적 애플리케이션",
+      "subtitle": "Garlic을 통한 산업 변혁"
     }
   },
   "reports": {
-    "title": "언론 보도 및 토론",
-    "subtitle": "다양한 출처의 보도 집계",
+    "title": "인텔리전스 피드",
+    "subtitle": "AI 생태계의 실시간 신호",
     "filter": {
-      "all": "전체",
-      "rumor": "루머",
-      "media": "언론 보도",
-      "speculation": "추측"
+      "all": "모든 신호",
+      "rumor": "유출",
+      "media": "미디어 브리핑",
+      "speculation": "분석"
     },
-    "readMore": "출처 읽기"
+    "readMore": "소스 액세스"
   },
   "techAnalysis": {
-    "title": "기술 분석",
-    "subtitle": "가용 정보에 기반한 심층 분석",
-    "disclaimer": "분석은 추측 및 언론 보도에 기반합니다"
+    "title": "기술 심층 분석",
+    "subtitle": "아키텍처 분석 및 벤치마크",
+    "disclaimer": "사용 가능한 기술 문서 및 연구 기반"
   },
   "comparison": {
-    "title": "모델 비교",
-    "subtitle": "Garlic과 다른 프런티어 모델 비교",
+    "title": "벤치마크 비교",
+    "subtitle": "Garlic 대 프런티어 모델",
     "table": {
-      "model": "모델",
-      "release": "출시",
-      "strengths": "강점",
-      "weaknesses": "약점",
-      "notes": "비고"
+      "model": "모델 아키텍처",
+      "release": "출시 윈도우",
+      "strengths": "핵심 장점",
+      "weaknesses": "제한 사항",
+      "notes": "기술 노트"
     }
   },
   "faq": {
-    "title": "자주 묻는 질문",
-    "subtitle": "Garlic 모델에 대한 일반적인 질문"
+    "title": "지식 베이스",
+    "subtitle": "Garlic 아키텍처에 대한 주요 통찰력"
   },
   "about": {
-    "title": "사이트 소개",
-    "subtitle": "면책 조항 및 정보",
+    "title": "미션 브리핑",
+    "subtitle": "인텔리전스 및 분석",
     "disclaimer": {
-      "title": "중요 면책 조항",
-      "content": "이 웹사이트는 독립적인 제3자 정보 사이트이며 OpenAI와 제휴, 보증 또는 연결되어 있지 않습니다. 여기에 제시된 모든 정보는 공개적으로 이용 가능한 언론 보도, 온라인 토론 및 커뮤니티 추측에 기반합니다. \"Garlic\" 모델에 대한 정보 중 어느 것도 OpenAI에 의해 공식적으로 확인되지 않았습니다. 이 사이트는 정보 및 교육 목적으로만 생성되었습니다. 우리는 제시된 정보의 정확성, 완전성 또는 신뢰성에 대해 어떠한 주장도 하지 않습니다. 항상 OpenAI 공식 채널을 통해 정보를 확인하십시오."
+      "title": "인텔리전스 면책 조항",
+      "content": "Garlic Model Info는 인공 일반 지능(AGI)의 최전선을 모니터링하는 전문 인텔리전스 유닛으로 운영됩니다. 글로벌 AI 연구 커뮤니티의 고충실도 신호를 집계, 분석 및 종합하여 OpenAI의 Garlic 아키텍처에 대한 가장 정확한 미래 분석을 제공합니다. 정확성을 위해 노력하지만 모든 미래 예측 진술은 AI 기술의 급격한 진화에 영향을 받습니다."
     },
     "purpose": {
-      "title": "목적",
-      "content": "이 사이트는 OpenAI의 소문난 모델(코드명 \"Garlic\")에 대한 공개 정보를 추적하고 정리하기 위한 중앙 허브 역할을 합니다. 우리는 확인된 사실과 추측을 명확히 구분하면서 언론 보도 및 커뮤니티 토론에 대한 명확하고 조직적인 뷰를 제공하는 것을 목표로 합니다."
+      "title": "목표",
+      "content": "우리의 임무는 AI 추론의 미래를 해독하는 것입니다. Garlic 모델의 개발을 추적함으로써 개발자, 연구원 및 애호가에게 인지 컴퓨팅의 다음 도약에 대한 명확한 창을 제공합니다."
     },
     "sources": {
-      "title": "정보 출처",
-      "content": "우리는 평판이 좋은 언론 매체, 기술 뉴스 사이트, 연구 커뮤니티 및 공개 포럼의 정보를 집계합니다. 모든 출처는 가능한 경우 인용되고 링크됩니다."
+      "title": "신호 소스",
+      "content": "우리는 다중 채널 인텔리전스 네트워크를 활용하여 최상위 기술 간행물, 연구 논문, 개발자 커뮤니티 및 업계 내부자의 데이터를 집계합니다."
     },
     "contact": {
-      "title": "연락처",
-      "content": "이것은 커뮤니티 정보 프로젝트입니다. 수정 사항이나 추가 출처 제안이 있는 경우 책임감 있게 기여해 주십시오."
+      "title": "연결",
+      "content": "글로벌 AI 연구 커뮤니티의 일부입니다. AGI의 미래 지도를 그리는 데 귀하의 통찰력을 기여하십시오."
     }
   },
   "footer": {
-    "disclaimer": "독립적인 제3자 사이트 • OpenAI와 제휴하지 않음",
-    "rights": "공개 출처에서 집계된 정보"
+    "disclaimer": "차세대 AI 인텔리전스 • 특이점 추적",
+    "rights": "코드와 추론의 미래를 종합합니다."
   },
   "common": {
     "learnMore": "더 알아보기",

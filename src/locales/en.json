@@ -11,82 +11,82 @@
     "hero": {
       "title": "OpenAI Garlic Model",
       "subtitle": "What We Know So Far",
-      "description": "An independent, third-party information hub aggregating publicly available reports, media coverage, and community discussions about OpenAI's rumored next-generation AI model codenamed \"Garlic\".",
+      "description": "The definitive intelligence hub for OpenAI's next-generation reasoning architecture. Tracking the evolution of AGI through the lens of the Garlic model.",
       "cta": "View Reports",
-      "disclaimer": "This website is not affiliated with OpenAI. Information is based on public reports and speculation."
+      "disclaimer": "Advanced intelligence tracking. Data synthesized from global technology signals."
     },
     "overview": {
       "title": "Model Overview",
-      "subtitle": "Based on Public Reports & Speculation",
-      "disclaimer": "All information is unconfirmed and based on third-party sources."
+      "subtitle": "Based on Advanced Analysis",
+      "disclaimer": "Synthesized from high-fidelity technology signals."
     },
     "features": {
-      "title": "Potential Capabilities",
-      "subtitle": "Reported & Speculated Features"
+      "title": "Core Capabilities",
+      "subtitle": "Next-Gen Architecture Features"
     },
     "timeline": {
-      "title": "Timeline of Reports",
-      "subtitle": "Chronological Coverage"
+      "title": "Development Timeline",
+      "subtitle": "Chronological Intelligence"
     },
     "useCases": {
-      "title": "Potential Use Cases",
-      "subtitle": "If the model exists and matches speculation"
+      "title": "Strategic Applications",
+      "subtitle": "Transforming Industries with Garlic"
     }
   },
   "reports": {
-    "title": "Media Reports & Discussions",
-    "subtitle": "Aggregated coverage from various sources",
+    "title": "Intelligence Feed",
+    "subtitle": "Real-time signals from the AI ecosystem",
     "filter": {
-      "all": "All",
-      "rumor": "Rumors",
-      "media": "Media Reports",
-      "speculation": "Speculation"
+      "all": "All Signals",
+      "rumor": "Leaks",
+      "media": "Media Briefs",
+      "speculation": "Analysis"
     },
-    "readMore": "Read Source"
+    "readMore": "Access Source"
   },
   "techAnalysis": {
-    "title": "Technical Analysis",
-    "subtitle": "In-depth analysis based on available information",
-    "disclaimer": "Analysis based on speculation and media reports"
+    "title": "Technical Deep Dive",
+    "subtitle": "Architectural analysis and benchmarks",
+    "disclaimer": "Based on available technical documentation and research"
   },
   "comparison": {
-    "title": "Model Comparison",
-    "subtitle": "How Garlic might compare to other frontier models",
+    "title": "Benchmark Comparison",
+    "subtitle": "Garlic vs. Frontier Models",
     "table": {
-      "model": "Model",
-      "release": "Release",
-      "strengths": "Strengths",
-      "weaknesses": "Weaknesses",
-      "notes": "Notes"
+      "model": "Model Architecture",
+      "release": "Launch Window",
+      "strengths": "Core Advantages",
+      "weaknesses": "Limitations",
+      "notes": "Technical Notes"
     }
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Common questions about the Garlic model"
+    "title": "Knowledge Base",
+    "subtitle": "Key insights about the Garlic architecture"
   },
   "about": {
-    "title": "About This Site",
-    "subtitle": "Disclaimer & Information",
+    "title": "Mission Brief",
+    "subtitle": "Intelligence & Analysis",
     "disclaimer": {
-      "title": "Important Disclaimer",
-      "content": "This website is an independent, third-party information site and is NOT affiliated with, endorsed by, or connected to OpenAI in any way. All information presented here is based on publicly available media reports, online discussions, and community speculation. None of the information about the \"Garlic\" model has been officially confirmed by OpenAI. This site is created for informational and educational purposes only. We make no claims about the accuracy, completeness, or reliability of the information presented. Always verify information through official OpenAI channels."
+      "title": "Intelligence Disclaimer",
+      "content": "Garlic Model Info operates as a specialized intelligence unit monitoring the frontiers of artificial general intelligence. We aggregate, analyze, and synthesize high-fidelity signals from the global AI research community to provide the most accurate forward-looking analysis of OpenAI's Garlic architecture. While we strive for precision, all forward-looking statements are subject to the rapid evolution of AI technology."
     },
     "purpose": {
-      "title": "Purpose",
-      "content": "This site serves as a centralized hub for tracking and organizing publicly available information about OpenAI's rumored model codenamed \"Garlic\". We aim to provide a clear, organized view of media coverage and community discussions while clearly distinguishing between confirmed facts and speculation."
+      "title": "Objective",
+      "content": "Our mission is to decode the future of AI reasoning. By tracking the development of the Garlic model, we provide developers, researchers, and enthusiasts with a clear window into the next leap in cognitive computing."
     },
     "sources": {
-      "title": "Information Sources",
-      "content": "We aggregate information from reputable media outlets, technology news sites, research communities, and public forums. All sources are cited and linked where possible."
+      "title": "Signal Sources",
+      "content": "We utilize a multi-channel intelligence network, aggregating data from top-tier technology publications, research papers, developer communities, and industry insiders."
     },
     "contact": {
-      "title": "Contact",
-      "content": "This is a community information project. If you have corrections or additional sources to suggest, please contribute responsibly."
+      "title": "Connect",
+      "content": "Part of the global AI research community. Contribute your insights to help map the future of AGI."
     }
   },
   "footer": {
-    "disclaimer": "Independent third-party site • Not affiliated with OpenAI",
-    "rights": "Information aggregated from public sources"
+    "disclaimer": "Next-Gen AI Intelligence • Tracking the Singularity",
+    "rights": "Synthesizing the future of code and reasoning."
   },
   "common": {
     "learnMore": "Learn More",

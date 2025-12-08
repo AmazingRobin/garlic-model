@@ -3,8 +3,16 @@
     <div class="container-custom">
       <!-- Header -->
       <div class="text-center mb-12">
-        <h2 class="section-heading">{{ t('reports.title') }}</h2>
-        <p class="text-gray-400 text-lg">{{ t('reports.subtitle') }}</p>
+        <div class="mb-6">
+          <router-link to="/" class="inline-flex items-center text-gray-400 hover:text-primary-400 transition-colors">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to Home
+          </router-link>
+        </div>
+        <h1 class="section-heading">All Media Reports & Discussions</h1>
+        <p class="text-gray-400 text-lg">Comprehensive archive of all news and updates</p>
         
         <!-- Loading & Last Update Info -->
         <div class="mt-4 flex items-center justify-center gap-4 text-sm">
@@ -50,8 +58,9 @@
       <!-- Reports Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
-          v-for="report in filteredReports.slice(0, 9)"
+          v-for="(report, index) in paginatedReports"
           :key="report.id"
+          :id="currentPage === 1 && index === 8 ? 'scroll-target' : undefined"
           class="card group hover:border-primary-500/30 transition-all duration-300"
         >
           <!-- Category Badge -->
@@ -105,24 +114,51 @@
         </div>
       </div>
 
-      <!-- View All Button -->
-      <div class="mt-12 text-center" v-if="filteredReports.length > 9">
-        <router-link 
-          to="/reports" 
-          class="btn-secondary inline-flex items-center px-8 py-3"
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center items-center space-x-4" v-if="totalPages > 1">
+        <!-- Previous Button -->
+        <button 
+          @click="changePage(currentPage - 1)"
+          :disabled="currentPage === 1"
+          class="p-2 rounded-lg border border-dark-700 text-gray-400 hover:text-white hover:border-primary-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          View All Reports
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
           </svg>
-        </router-link>
+        </button>
+
+        <!-- Page Numbers -->
+        <div class="flex space-x-2">
+          <button
+            v-for="page in totalPages"
+            :key="page"
+            @click="changePage(page)"
+            class="w-10 h-10 rounded-lg border font-medium transition-all duration-200"
+            :class="currentPage === page 
+              ? 'bg-primary-500 text-white border-primary-500 shadow-lg shadow-primary-500/25' 
+              : 'bg-dark-800 text-gray-400 border-dark-700 hover:border-gray-600 hover:text-white'"
+          >
+            {{ page }}
+          </button>
+        </div>
+
+        <!-- Next Button -->
+        <button 
+          @click="changePage(currentPage + 1)"
+          :disabled="currentPage === totalPages"
+          class="p-2 rounded-lg border border-dark-700 text-gray-400 hover:text-white hover:border-primary-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, nextTick, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { reports as staticReports } from '@/data/reports'
 import type { Report } from '@/types'
@@ -135,7 +171,11 @@ const isLoading = ref(false)
 const lastUpdate = ref<string>('')
 const apiError = ref<string>('')
 
-// Worker API URL - 部署后需要替换为实际的 Worker URL
+// 分页状态
+const currentPage = ref(1)
+const itemsPerPage = 12
+
+// Worker API URL
 const WORKER_API_URL = import.meta.env.VITE_WORKER_API_URL || 'https://garlic-news-crawler.YOUR_ACCOUNT.workers.dev/api/reports'
 
 const filters = [
@@ -147,17 +187,13 @@ const filters = [
 
 // 合并静态和动态数据
 const allReports = computed(() => {
-  // 合并两个数组，动态数据在前
   const merged = [...dynamicReports.value, ...staticReports]
-  
-  // 去重（基于 id）
   const seen = new Set<string>()
   return merged.filter(report => {
     if (seen.has(report.id)) return false
     seen.add(report.id)
     return true
   }).sort((a, b) => {
-    // 按日期降序排列
     return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
 })
@@ -167,9 +203,44 @@ const filteredReports = computed(() => {
   return allReports.value.filter(report => report.category === activeFilter.value)
 })
 
+// 分页计算
+const totalPages = computed(() => Math.ceil(filteredReports.value.length / itemsPerPage))
+
+const paginatedReports = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage
+  const end = start + itemsPerPage
+  return filteredReports.value.slice(start, end)
+})
+
+// 切换页码
+function changePage(page: number) {
+  if (page < 1 || page > totalPages.value) return
+  currentPage.value = page
+  window.scrollTo({ top: 0, behavior: 'auto' })
+}
+
+// 监听筛选变化，重置页码
+watch(activeFilter, () => {
+  currentPage.value = 1
+})
+
+// 滚动到第9个元素 (仅在第一页且非筛选状态下有效，或者根据需求调整)
+// 这里我们保留逻辑，但只在初始化加载时使用
+async function scrollToTarget() {
+  await nextTick()
+  // 只有在第一页才尝试滚动，避免翻页时乱跳
+  if (currentPage.value === 1) {
+    const target = document.getElementById('scroll-target')
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  }
+}
+
 // 从 Worker API 获取动态新闻
 async function fetchDynamicReports() {
   isLoading.value = true
+  window.scrollTo({ top: 0, behavior: 'auto' })
   apiError.value = ''
   
   try {
@@ -194,15 +265,18 @@ async function fetchDynamicReports() {
   } catch (error) {
     console.warn('⚠️ Failed to fetch dynamic reports, using static data only:', error)
     apiError.value = 'Failed to load latest news'
-    // 降级到只使用静态数据
     dynamicReports.value = []
   } finally {
     isLoading.value = false
+    // 数据加载完成后滚动
+    scrollToTarget()
   }
 }
 
 // 组件挂载时获取动态数据
 onMounted(() => {
+  // 强制滚动到顶部
+  window.scrollTo({ top: 0, behavior: 'auto' })
   fetchDynamicReports()
 })
 
@@ -225,7 +299,6 @@ function formatLastUpdate(isoString: string): string {
     const diffDays = Math.floor(diffHours / 24)
     if (diffDays < 7) return `${diffDays} day${diffDays > 1 ? 's' : ''} ago`
     
-    // 超过7天显示具体日期
     return date.toLocaleDateString('en-US', { 
       year: 'numeric', 
       month: 'short', 
@@ -243,9 +316,8 @@ function stripHtml(html: string): string {
   tmp.innerHTML = html
   return tmp.textContent || tmp.innerText || ''
 }
-
-
 </script>
+
 <style scoped>
 .line-clamp-2 {
   display: -webkit-box;

@@ -1,0 +1,25 @@
+name = "garlic-news-crawler"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# KV Namespace for storing news data
+kv_namespaces = [
+  { binding = "NEWS_STORAGE", id = "bf7ff4e62d0c467db808426273cf8b03" }
+]
+
+# Cron Triggers - Run at 00:00, 08:00, 12:00, 16:00, 20:00 UTC+8
+[triggers]
+crons = [
+  "0 16 * * *",  # 00:00 UTC+8 = 16:00 UTC
+  "0 0 * * *",   # 08:00 UTC+8 = 00:00 UTC
+  "0 4 * * *",   # 12:00 UTC+8 = 04:00 UTC
+  "0 8 * * *",   # 16:00 UTC+8 = 08:00 UTC
+  "0 12 * * *"   # 20:00 UTC+8 = 12:00 UTC
+]
+
+# CORS settings
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.development]
+vars = { ENVIRONMENT = "development" }

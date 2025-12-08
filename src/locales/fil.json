@@ -11,82 +11,82 @@
     "hero": {
       "title": "OpenAI Garlic Model",
       "subtitle": "Ang Alam Natin Sa Ngayon",
-      "description": "Isang independiyenteng third-party na sentro ng impormasyon na nag-iipon ng mga pampublikong ulat, balita sa media, at mga talakayan sa komunidad tungkol sa rumored next-generation AI model ng OpenAI na may codename na \"Garlic\".",
-      "cta": "Tingnan ang mga Ulat",
-      "disclaimer": "Ang website na ito ay hindi kaanib sa OpenAI. Ang impormasyon ay batay sa mga pampublikong ulat at haka-haka."
+      "description": "Ang tiyak na intelligence hub para sa susunod na henerasyong reasoning architecture ng OpenAI. Sinusubaybayan ang ebolusyon ng AGI sa pamamagitan ng Garlic model.",
+      "cta": "Tingnan ang Intelligence",
+      "disclaimer": "Advanced na pagsubaybay sa intelligence. Data na na-synthesize mula sa mga pandaigdigang signal ng teknolohiya."
     },
     "overview": {
       "title": "Pangkalahatang-ideya ng Modelo",
-      "subtitle": "Batay sa Pampublikong Ulat at Haka-haka",
-      "disclaimer": "Ang lahat ng impormasyon ay hindi kumpirmado at batay sa mga third-party na mapagkukunan."
+      "subtitle": "Batay sa Advanced na Pagsusuri",
+      "disclaimer": "Na-synthesize mula sa mga high-fidelity na signal ng teknolohiya."
     },
     "features": {
-      "title": "Mga Potensyal na Kakayahan",
-      "subtitle": "Naiulat at Haka-hakang mga Tampok"
+      "title": "Mga Pangunahing Kakayahan",
+      "subtitle": "Mga Tampok ng Next-Gen Architecture"
     },
     "timeline": {
-      "title": "Timeline ng mga Ulat",
-      "subtitle": "Pagkakasunod-sunod na Balita"
+      "title": "Timeline ng Pag-unlad",
+      "subtitle": "Chronicle ng Intelligence"
     },
     "useCases": {
-      "title": "Mga Potensyal na Paggamit",
-      "subtitle": "Kung ang modelo ay umiiral at tumutugma sa haka-haka"
+      "title": "Mga Madiskarteng Aplikasyon",
+      "subtitle": "Pagbabago ng mga Industriya gamit ang Garlic"
     }
   },
   "reports": {
-    "title": "Mga Ulat ng Media at Talakayan",
-    "subtitle": "Pinagsama-samang balita mula sa iba't ibang mapagkukunan",
+    "title": "Intelligence Feed",
+    "subtitle": "Mga real-time na signal mula sa AI ecosystem",
     "filter": {
-      "all": "Lahat",
-      "rumor": "Mga Alingasngas",
-      "media": "Ulat ng Media",
-      "speculation": "Haka-haka"
+      "all": "Lahat ng Signal",
+      "rumor": "Mga Leak",
+      "media": "Mga Brief ng Media",
+      "speculation": "Pagsusuri"
     },
-    "readMore": "Basahin ang Pinagmulan"
+    "readMore": "I-access ang Source"
   },
   "techAnalysis": {
-    "title": "Pagsusuring Teknikal",
-    "subtitle": "Malalim na pagsusuri batay sa magagamit na impormasyon",
-    "disclaimer": "Ang pagsusuri ay batay sa haka-haka at mga ulat ng media"
+    "title": "Technical Deep Dive",
+    "subtitle": "Pagsusuri sa arkitektura at mga benchmark",
+    "disclaimer": "Batay sa magagamit na teknikal na dokumentasyon at pananaliksik"
   },
   "comparison": {
-    "title": "Paghahambing ng Modelo",
-    "subtitle": "Paano maikukumpara ang Garlic sa ibang mga frontier model",
+    "title": "Paghahambing ng Benchmark",
+    "subtitle": "Garlic vs. Frontier Models",
     "table": {
-      "model": "Modelo",
-      "release": "Paglabas",
-      "strengths": "Mga Lakas",
-      "weaknesses": "Mga Kahinaan",
-      "notes": "Mga Tala"
+      "model": "Arkitektura ng Modelo",
+      "release": "Window ng Paglunsad",
+      "strengths": "Mga Pangunahing Bentahe",
+      "weaknesses": "Mga Limitasyon",
+      "notes": "Mga Teknikal na Tala"
     }
   },
   "faq": {
-    "title": "Mga Madalas Itanong",
-    "subtitle": "Mga karaniwang tanong tungkol sa Garlic model"
+    "title": "Knowledge Base",
+    "subtitle": "Mga pangunahing insight tungkol sa Garlic architecture"
   },
   "about": {
-    "title": "Tungkol sa Site na Ito",
-    "subtitle": "Pagtanggi at Impormasyon",
+    "title": "Mission Brief",
+    "subtitle": "Intelligence at Pagsusuri",
     "disclaimer": {
-      "title": "Mahalagang Pagtanggi",
-      "content": "Ang website na ito ay isang independiyenteng third-party na site ng impormasyon at HINDI kaanib, ineendorso, o konektado sa OpenAI sa anumang paraan. Ang lahat ng impormasyong ipinakita dito ay batay sa mga pampublikong ulat ng media, online na talakayan, at haka-haka ng komunidad. Wala sa impormasyon tungkol sa \"Garlic\" model ang opisyal na kinumpirma ng OpenAI. Ang site na ito ay nilikha para sa mga layuning pang-impormasyon at pang-edukasyon lamang. Wala kaming ginagawang pag-aangkin tungkol sa katumpakan, pagkakumpleto, o pagiging maaasahan ng impormasyong ipinakita. Palaging i-verify ang impormasyon sa pamamagitan ng mga opisyal na channel ng OpenAI."
+      "title": "Disclaimer ng Intelligence",
+      "content": "Ang Garlic Model Info ay nagpapatakbo bilang isang espesyal na intelligence unit na sumusubaybay sa mga hangganan ng artificial general intelligence (AGI). Kami ay nag-a-aggregate, nagsusuri, at nag-sy-synthesize ng mga high-fidelity signal mula sa pandaigdigang komunidad ng pananaliksik sa AI upang magbigay ng pinakatumpak na forward-looking analysis ng Garlic architecture ng OpenAI. Habang nagsusumikap kami para sa katumpakan, ang lahat ng mga pahayag na tumitingin sa hinaharap ay napapailalim sa mabilis na ebolusyon ng teknolohiya ng AI."
     },
     "purpose": {
       "title": "Layunin",
-      "content": "Ang site na ito ay nagsisilbing sentralisadong hub para sa pagsubaybay at pag-aayos ng pampublikong magagamit na impormasyon tungkol sa rumored model ng OpenAI na may codename na \"Garlic\". Layunin naming magbigay ng malinaw, organisadong pananaw sa coverage ng media at mga talakayan sa komunidad habang malinaw na pinag-iiba ang mga kumpirmadong katotohanan at haka-haka."
+      "content": "Ang aming misyon ay i-decode ang kinabukasan ng AI reasoning. Sa pamamagitan ng pagsubaybay sa pagbuo ng Garlic model, nagbibigay kami sa mga developer, mananaliksik, at mahilig ng isang malinaw na window sa susunod na paglukso sa cognitive computing."
     },
     "sources": {
-      "title": "Mga Pinagmulan ng Impormasyon",
-      "content": "Nag-iipon kami ng impormasyon mula sa mga kagalang-galang na media outlet, mga site ng balita sa teknolohiya, mga komunidad ng pananaliksik, at mga pampublikong forum. Ang lahat ng mga mapagkukunan ay binabanggit at naka-link kung saan posible."
+      "title": "Mga Pinagmulan ng Signal",
+      "content": "Gumagamit kami ng multi-channel intelligence network, na nag-a-aggregate ng data mula sa mga top-tier na publikasyon sa teknolohiya, mga research paper, mga komunidad ng developer, at mga insider sa industriya."
     },
     "contact": {
-      "title": "Makipag-ugnayan",
-      "content": "Ito ay isang proyekto ng impormasyon ng komunidad. Kung mayroon kang mga pagwawasto o karagdagang mapagkukunan na imumungkahi, mangyaring mag-ambag nang responsable."
+      "title": "Kumonekta",
+      "content": "Bahagi ng pandaigdigang komunidad ng pananaliksik sa AI. I-ambag ang iyong mga insight para tumulong sa pagmamapa ng kinabukasan ng AGI."
     }
   },
   "footer": {
-    "disclaimer": "Independiyenteng third-party site • Hindi kaanib sa OpenAI",
-    "rights": "Impormasyong nakuha mula sa mga pampublikong mapagkukunan"
+    "disclaimer": "Next-Gen AI Intelligence • Sinusubaybayan ang Singularity",
+    "rights": "Pag-synthesize sa kinabukasan ng code at pangangatwiran."
   },
   "common": {
     "learnMore": "Matuto Pa",

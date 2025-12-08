@@ -71,8 +71,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 import Reports from '@/views/Reports.vue'
 import TechAnalysis from '@/views/TechAnalysis.vue'
 import Comparison from '@/views/Comparison.vue'
@@ -81,15 +82,39 @@ import About from '@/views/About.vue'
 import { updateMetaTags, injectSchema, generateArticleSchema } from '@/utils/seo'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const scrollToSection = (id: string) => {
   const element = document.getElementById(id)
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' })
+    const headerOffset = 80
+    const elementPosition = element.getBoundingClientRect().top
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    })
   }
 }
 
+// 监听 hash 变化，处理页内导航
+watch(() => route.hash, (newHash) => {
+  if (newHash) {
+    const id = newHash.replace('#', '')
+    scrollToSection(id)
+  }
+})
+
 onMounted(() => {
+  // Check for hash in URL and scroll to it
+  if (route.hash) {
+    setTimeout(() => {
+      const id = route.hash.replace('#', '')
+      scrollToSection(id)
+    }, 100) // Small delay to ensure DOM is ready
+  }
+
   // Update SEO
   updateMetaTags({
     title: 'OpenAI Garlic Model - The Next Leap in AI Reasoning and Coding | Release Date & Specs',

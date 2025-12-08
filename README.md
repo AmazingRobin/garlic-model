@@ -10,6 +10,7 @@ This is an **unofficial** website and is **NOT affiliated** with OpenAI in any w
 
 ## 🎯 Features
 
+- **🤖 Auto News Crawler**: Cloudflare Worker automatically crawls news 5 times daily
 - **📰 Media Reports Aggregation**: Comprehensive collection of news and reports from various sources
 - **🔬 Technical Analysis**: In-depth analysis based on available information  
 - **📊 Model Comparison**: Compare Garlic with other frontier AI models
@@ -27,6 +28,35 @@ This is an **unofficial** website and is **NOT affiliated** with OpenAI in any w
 - **i18n**: Vue I18n 9
 - **Markdown**: markdown-it
 - **SEO**: Auto-generated sitemap, Schema.org, OpenGraph
+- **Crawler**: Cloudflare Workers + KV Storage
+
+## 🤖 Auto News Crawler System
+
+This project includes a **fully automated news crawler** powered by Cloudflare Workers that:
+
+- ✅ **Automatically crawls** Google News for "garlic model", "garlic LLM", "garlic openai" keywords
+- ✅ **Runs 5 times daily** at 00:00, 08:00, 12:00, 16:00, 20:00 (UTC+8)
+- ✅ **Smart categorization**: Auto-classifies news as media/rumor/speculation
+- ✅ **Deduplication**: Filters out duplicate articles
+- ✅ **100% Free**: Uses Google News RSS (no API costs)
+- ✅ **Zero maintenance**: Serverless architecture
+
+### Quick Crawler Setup
+
+```bash
+# 1. Deploy the Cloudflare Worker
+cd worker
+./deploy.sh
+
+# 2. Configure frontend API URL
+cd ..
+echo 'VITE_WORKER_API_URL=https://garlic-news-crawler.YOUR_ACCOUNT.workers.dev/api/reports' > .env.local
+
+# 3. Restart dev server
+npm run dev
+```
+
+📚 **Detailed Guide**: See [worker/CRAWLER_README.md](./worker/CRAWLER_README.md) for full documentation.
 
 ## 🚀 Quick Start
 
@@ -70,13 +100,13 @@ garlic-model/
 │   │   └── ComparisonTable.vue
 │   ├── views/          # Page components
 │   │   ├── Home.vue
-│   │   ├── Reports.vue
+│   │   ├── Reports.vue      # ✨ Integrated with Crawler API
 │   │   ├── TechAnalysis.vue
 │   │   ├── Comparison.vue
 │   │   ├── FAQ.vue
 │   │   └── About.vue
 │   ├── data/           # Static data
-│   │   ├── reports.ts
+│   │   ├── reports.ts       # Static curated news
 │   │   ├── features.ts
 │   │   ├── comparison.ts
 │   │   ├── faq.ts
@@ -92,7 +122,16 @@ garlic-model/
 │   ├── App.vue
 │   ├── main.ts
 │   └── style.css
+├── worker/             # 🤖 Auto News Crawler
+│   ├── src/
+│   │   └── index.js         # Worker main logic
+│   ├── wrangler.toml        # Worker config
+│   ├── deploy.sh            # Auto-deploy script
+│   ├── README.md            # Worker docs
+│   ├── INTEGRATION.md       # Integration guide
+│   └── CRAWLER_README.md    # Full documentation
 ├── dist/               # Build output
+├── .env.local          # Environment variables (create this)
 └── README.md
 ```
 

@@ -17,6 +17,9 @@ export const createApp = ViteSSG(
       if (lang) {
         await loadLocaleMessages(lang as any)
         i18n.global.locale.value = lang as any
+      } else {
+        // Default to English if no lang param
+        i18n.global.locale.value = 'en' as any
       }
       next()
     })

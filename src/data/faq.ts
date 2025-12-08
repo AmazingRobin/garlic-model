@@ -55,10 +55,5 @@ export const faqItems: FAQItem[] = [
     answer: 'If the model exists and is released, it would likely be available through OpenAI\'s API platform based on the company\'s historical patterns. However, this is speculation based on past releases, not confirmed information.',
     category: 'technical'
   },
-  {
-    id: 'faq010',
-    question: 'Is this website affiliated with OpenAI?',
-    answer: 'No. This is an independent, third-party information site created to aggregate publicly available reports and discussions about the rumored Garlic model. We are not affiliated with, endorsed by, or connected to OpenAI in any way.',
-    category: 'about'
-  }
+
 ]

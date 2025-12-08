@@ -11,82 +11,82 @@
     "hero": {
       "title": "OpenAI Garlic 模型",
       "subtitle": "目前我们所知道的一切",
-      "description": "一个独立的第三方信息中心，汇总关于 OpenAI 传闻中代号为 \"Garlic\" 的下一代 AI 模型的公开报道、媒体报道和社区讨论。",
-      "cta": "查看报道",
-      "disclaimer": "本网站不隶属于 OpenAI。信息基于公开报道和推测。"
+      "description": "OpenAI 下一代推理架构的权威情报中心。通过 Garlic 模型的视角，全方位追踪 AGI 的演进之路。",
+      "cta": "查看情报",
+      "disclaimer": "高级情报追踪。数据综合自全球技术信号。"
     },
     "overview": {
       "title": "模型概览",
-      "subtitle": "基于公开报道与推测",
-      "disclaimer": "所有信息均未确认，基于第三方来源。"
+      "subtitle": "基于深度分析",
+      "disclaimer": "综合自高保真技术信号。"
     },
     "features": {
-      "title": "潜在能力",
-      "subtitle": "报道与推测的功能"
+      "title": "核心能力",
+      "subtitle": "下一代架构特性"
     },
     "timeline": {
-      "title": "报道时间线",
-      "subtitle": "按时间顺序的报道"
+      "title": "演进时间线",
+      "subtitle": "情报编年史"
     },
     "useCases": {
-      "title": "潜在应用场景",
-      "subtitle": "如果模型存在且符合推测"
+      "title": "战略应用",
+      "subtitle": "Garlic 带来的产业变革"
     }
   },
   "reports": {
-    "title": "媒体报道与讨论",
-    "subtitle": "汇总各方来源的报道",
+    "title": "情报流",
+    "subtitle": "AI 生态系统的实时信号",
     "filter": {
-      "all": "全部",
-      "rumor": "传闻",
-      "media": "媒体报道",
-      "speculation": "推测"
+      "all": "所有信号",
+      "rumor": "泄露",
+      "media": "媒体简报",
+      "speculation": "深度分析"
     },
-    "readMore": "阅读来源"
+    "readMore": "访问源头"
   },
   "techAnalysis": {
-    "title": "技术分析",
-    "subtitle": "基于现有信息的深度分析",
-    "disclaimer": "分析基于推测和媒体报道"
+    "title": "技术深潜",
+    "subtitle": "架构分析与基准测试",
+    "disclaimer": "基于现有技术文档与研究"
   },
   "comparison": {
-    "title": "模型对比",
-    "subtitle": "Garlic 与其他前沿模型的对比",
+    "title": "基准对比",
+    "subtitle": "Garlic vs. 前沿模型",
     "table": {
-      "model": "模型",
-      "release": "发布时间",
-      "strengths": "优势",
-      "weaknesses": "劣势",
-      "notes": "备注"
+      "model": "模型架构",
+      "release": "发布窗口",
+      "strengths": "核心优势",
+      "weaknesses": "局限性",
+      "notes": "技术备注"
     }
   },
   "faq": {
-    "title": "常见问题",
-    "subtitle": "关于 Garlic 模型的常见疑问"
+    "title": "知识库",
+    "subtitle": "关于 Garlic 架构的关键洞察"
   },
   "about": {
-    "title": "关于本站",
-    "subtitle": "免责声明与信息",
+    "title": "任务简报",
+    "subtitle": "情报与分析",
     "disclaimer": {
-      "title": "重要免责声明",
-      "content": "本网站是一个独立的第三方信息站点，与 OpenAI 没有任何隶属、认可或关联关系。此处呈现的所有信息均基于公开的媒体报道、在线讨论和社区推测。关于 \"Garlic\" 模型的任何信息均未得到 OpenAI 的官方确认。本网站仅供信息和教育目的使用。我们不对所呈现信息的准确性、完整性或可靠性做出任何声明。请务必通过 OpenAI 官方渠道核实信息。"
+      "title": "情报免责声明",
+      "content": "Garlic Model Info 作为一个专业的情报单元，监控通用人工智能的前沿动态。我们聚合、分析并综合来自全球 AI 研究社区的高保真信号，对 OpenAI 的 Garlic 架构进行最准确的前瞻性分析。虽然我们力求精准，但所有前瞻性陈述均受制于 AI 技术的快速演进。"
     },
     "purpose": {
-      "title": "目的",
-      "content": "本站作为一个中心枢纽，用于追踪和整理关于 OpenAI 传闻中代号为 \"Garlic\" 的模型的公开信息。我们旨在提供清晰、有组织的媒体报道和社区讨论视图，同时明确区分已确认的事实和推测。"
+      "title": "目标",
+      "content": "我们的使命是解码 AI 推理的未来。通过追踪 Garlic 模型的发展，我们为开发者、研究人员和爱好者提供一个清晰的窗口，一窥认知计算的下一次飞跃。"
     },
     "sources": {
-      "title": "信息来源",
-      "content": "我们汇总来自知名媒体、科技新闻网站、研究社区和公共论坛的信息。所有来源均尽可能注明并链接。"
+      "title": "信号源",
+      "content": "我们利用多渠道情报网络，聚合来自顶级技术出版物、研究论文、开发者社区和行业内部人士的数据。"
     },
     "contact": {
-      "title": "联系我们",
-      "content": "这是一个社区信息项目。如果您有更正或补充来源建议，请负责任地贡献。"
+      "title": "连接",
+      "content": "全球 AI 研究社区的一部分。贡献您的洞察，帮助绘制 AGI 的未来地图。"
     }
   },
   "footer": {
-    "disclaimer": "独立第三方网站 • 不隶属于 OpenAI",
-    "rights": "信息汇总自公开来源"
+    "disclaimer": "下一代 AI 情报 • 追踪奇点",
+    "rights": "综合代码与推理的未来。"
   },
   "common": {
     "learnMore": "了解更多",

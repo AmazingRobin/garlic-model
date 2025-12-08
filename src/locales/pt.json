@@ -11,82 +11,82 @@
     "hero": {
       "title": "Modelo OpenAI Garlic",
       "subtitle": "O Que Sabemos Até Agora",
-      "description": "Um centro de informações independente de terceiros que agrega relatórios públicos, cobertura da mídia e discussões da comunidade sobre o suposto modelo de IA de próxima geração da OpenAI, codinome \"Garlic\".",
-      "cta": "Ver Relatórios",
-      "disclaimer": "Este site não é afiliado à OpenAI. As informações são baseadas em relatórios públicos e especulações."
+      "description": "O hub de inteligência definitivo para a arquitetura de raciocínio de próxima geração da OpenAI. Rastreando a evolução da AGI através das lentes do modelo Garlic.",
+      "cta": "Ver inteligência",
+      "disclaimer": "Rastreamento avançado de inteligência. Dados sintetizados a partir de sinais tecnológicos globais."
     },
     "overview": {
-      "title": "Visão Geral do Modelo",
-      "subtitle": "Baseado em Relatórios Públicos e Especulações",
-      "disclaimer": "Todas as informações não são confirmadas e baseadas em fontes de terceiros."
+      "title": "Visão geral do modelo",
+      "subtitle": "Baseado em análise avançada",
+      "disclaimer": "Sintetizado a partir de sinais tecnológicos de alta fidelidade."
     },
     "features": {
-      "title": "Capacidades Potenciais",
-      "subtitle": "Recursos Relatados e Especulados"
+      "title": "Capacidades principais",
+      "subtitle": "Características da arquitetura Next-Gen"
     },
     "timeline": {
-      "title": "Linha do Tempo dos Relatórios",
-      "subtitle": "Cobertura Cronológica"
+      "title": "Cronograma de desenvolvimento",
+      "subtitle": "Crônica de inteligência"
     },
     "useCases": {
-      "title": "Casos de Uso Potenciais",
-      "subtitle": "Se o modelo existir e corresponder à especulação"
+      "title": "Aplicações estratégicas",
+      "subtitle": "Transformando indústrias com Garlic"
     }
   },
   "reports": {
-    "title": "Relatórios da Mídia e Discussões",
-    "subtitle": "Cobertura agregada de várias fontes",
+    "title": "Feed de inteligência",
+    "subtitle": "Sinais em tempo real do ecossistema de IA",
     "filter": {
-      "all": "Todos",
-      "rumor": "Rumores",
-      "media": "Relatórios da Mídia",
-      "speculation": "Especulação"
+      "all": "Todos os sinais",
+      "rumor": "Vazamentos",
+      "media": "Briefings de mídia",
+      "speculation": "Análise"
     },
-    "readMore": "Ler Fonte"
+    "readMore": "Acessar fonte"
   },
   "techAnalysis": {
-    "title": "Análise Técnica",
-    "subtitle": "Análise aprofundada baseada em informações disponíveis",
-    "disclaimer": "Análise baseada em especulação e relatórios da mídia"
+    "title": "Mergulho técnico",
+    "subtitle": "Análise arquitetônica e benchmarks",
+    "disclaimer": "Baseado em documentação técnica e pesquisa disponível"
   },
   "comparison": {
-    "title": "Comparação de Modelos",
-    "subtitle": "Como o Garlic pode se comparar a outros modelos de fronteira",
+    "title": "Comparação de benchmarks",
+    "subtitle": "Garlic vs. Modelos de fronteira",
     "table": {
-      "model": "Modelo",
-      "release": "Lançamento",
-      "strengths": "Pontos Fortes",
-      "weaknesses": "Pontos Fracos",
-      "notes": "Notas"
+      "model": "Arquitetura do modelo",
+      "release": "Janela de lançamento",
+      "strengths": "Vantagens principais",
+      "weaknesses": "Limitações",
+      "notes": "Notas técnicas"
     }
   },
   "faq": {
-    "title": "Perguntas Frequentes",
-    "subtitle": "Perguntas comuns sobre o modelo Garlic"
+    "title": "Base de conhecimento",
+    "subtitle": "Insights principais sobre a arquitetura Garlic"
   },
   "about": {
-    "title": "Sobre Este Site",
-    "subtitle": "Isenção de Responsabilidade e Informações",
+    "title": "Briefing da missão",
+    "subtitle": "Inteligência e análise",
     "disclaimer": {
-      "title": "Isenção de Responsabilidade Importante",
-      "content": "Este site é um site de informações independente de terceiros e NÃO é afiliado, endossado ou conectado à OpenAI de forma alguma. Todas as informações apresentadas aqui são baseadas em relatórios de mídia publicamente disponíveis, discussões online e especulações da comunidade. Nenhuma das informações sobre o modelo \"Garlic\" foi oficialmente confirmada pela OpenAI. Este site foi criado apenas para fins informativos e educacionais. Não fazemos reivindicações sobre a precisão, integridade ou confiabilidade das informações apresentadas. Sempre verifique as informações através dos canais oficiais da OpenAI."
+      "title": "Aviso de inteligência",
+      "content": "Garlic Model Info opera como uma unidade de inteligência especializada monitorando as fronteiras da inteligência artificial geral (AGI). Agregamos, analisamos e sintetizamos sinais de alta fidelidade da comunidade global de pesquisa em IA para fornecer a análise prospectiva mais precisa da arquitetura Garlic da OpenAI. Embora busquemos precisão, todas as declarações prospectivas estão sujeitas à rápida evolução da tecnologia de IA."
     },
     "purpose": {
-      "title": "Propósito",
-      "content": "Este site serve como um centro centralizado para rastrear e organizar informações publicamente disponíveis sobre o suposto modelo da OpenAI, codinome \"Garlic\". Nosso objetivo é fornecer uma visão clara e organizada da cobertura da mídia e das discussões da comunidade, distinguindo claramente entre fatos confirmados e especulações."
+      "title": "Objetivo",
+      "content": "Nossa missão é decodificar o futuro do raciocínio da IA. Ao rastrear o desenvolvimento do modelo Garlic, oferecemos a desenvolvedores, pesquisadores e entusiastas uma janela clara para o próximo salto na computação cognitiva."
     },
     "sources": {
-      "title": "Fontes de Informação",
-      "content": "Agregamos informações de meios de comunicação respeitáveis, sites de notícias de tecnologia, comunidades de pesquisa e fóruns públicos. Todas as fontes são citadas e vinculadas sempre que possível."
+      "title": "Fontes de sinais",
+      "content": "Utilizamos uma rede de inteligência multicanal, agregando dados de publicações tecnológicas de primeira linha, trabalhos de pesquisa, comunidades de desenvolvedores e insiders da indústria."
     },
     "contact": {
-      "title": "Contato",
-      "content": "Este é um projeto de informação comunitária. Se você tiver correções ou fontes adicionais para sugerir, contribua de forma responsável."
+      "title": "Conectar",
+      "content": "Parte da comunidade global de pesquisa em IA. Contribua com seus insights para ajudar a mapear o futuro da AGI."
     }
   },
   "footer": {
-    "disclaimer": "Site independente de terceiros • Não afiliado à OpenAI",
-    "rights": "Informações agregadas de fontes públicas"
+    "disclaimer": "Inteligência de IA de próxima geração • Rastreando a singularidade",
+    "rights": "Sintetizando o futuro do código e do raciocínio."
   },
   "common": {
     "learnMore": "Saiba Mais",

@@ -11,12 +11,12 @@ const router = useRouter()
 const route = useRoute()
 
 const navLinks = [
-  { path: '#home', label: 'nav.home' },
-  { path: '#reports', label: 'nav.reports' },
-  { path: '#tech-analysis', label: 'nav.techAnalysis' },
-  { path: '#comparison', label: 'nav.comparison' },
-  { path: '#faq', label: 'nav.faq' },
-  { path: '#about', label: 'nav.about' },
+  { path: '/#home', label: 'nav.home' },
+  { path: '/reports', label: 'nav.reports' },
+  { path: '/#tech-analysis', label: 'nav.techAnalysis' },
+  { path: '/#comparison', label: 'nav.comparison' },
+  { path: '/#faq', label: 'nav.faq' },
+  { path: '/#about', label: 'nav.about' },
 ]
 
 const isMobileMenuOpen = ref(false)
@@ -53,14 +53,24 @@ const changeLocale = (code: string) => {
   isLangDropdownOpen.value = false
 }
 
-const handleNavClick = (hash: string) => {
+const handleNavClick = (path: string) => {
   // Close mobile menu
   isMobileMenuOpen.value = false
   
+  // 解析路径和 hash
+  const [pathname, hash] = path.split('#')
+  const targetHash = hash ? `#${hash}` : ''
+  
+  // 如果是纯路由跳转（如 /reports）
+  if (!targetHash) {
+    router.push(path)
+    return
+  }
+
   // Check if we are on a home page (e.g. /en/, /zh/ or /)
   // The route name is 'home' or 'home-en'
   if (route.name === 'home' || route.name === 'home-en') {
-    const element = document.querySelector(hash)
+    const element = document.querySelector(targetHash)
     if (element) {
       const headerOffset = 80
       const elementPosition = element.getBoundingClientRect().top
@@ -72,16 +82,16 @@ const handleNavClick = (hash: string) => {
       })
       
       // Update URL hash without jumping
-      history.pushState(null, '', hash)
+      history.pushState(null, '', targetHash)
     }
   } else {
     // If on another page, go to home of current language with hash
     // Default to 'en' if locale is not available for some reason, but it should be
     const currentLang = (route.params.lang as string) || 'en'
     if (currentLang === 'en') {
-      router.push({ path: '/', hash: hash })
+      router.push({ path: '/', hash: targetHash })
     } else {
-      router.push({ path: `/${currentLang}/`, hash: hash })
+      router.push({ path: `/${currentLang}/`, hash: targetHash })
     }
   }
 }
