@@ -58,9 +58,9 @@
       <!-- Reports Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
-          v-for="(report, index) in paginatedReports"
+          v-for="report in paginatedReports"
           :key="report.id"
-          :id="currentPage === 1 && index === 8 ? 'scroll-target' : undefined"
+
           class="card group hover:border-primary-500/30 transition-all duration-300"
         >
           <!-- Category Badge -->
@@ -158,7 +158,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, nextTick, watch } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { reports as staticReports } from '@/data/reports'
 import type { Report } from '@/types'
@@ -224,18 +224,7 @@ watch(activeFilter, () => {
   currentPage.value = 1
 })
 
-// 滚动到第9个元素 (仅在第一页且非筛选状态下有效，或者根据需求调整)
-// 这里我们保留逻辑，但只在初始化加载时使用
-async function scrollToTarget() {
-  await nextTick()
-  // 只有在第一页才尝试滚动，避免翻页时乱跳
-  if (currentPage.value === 1) {
-    const target = document.getElementById('scroll-target')
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'center' })
-    }
-  }
-}
+
 
 // 从 Worker API 获取动态新闻
 async function fetchDynamicReports() {
@@ -277,8 +266,7 @@ async function fetchDynamicReports() {
     dynamicReports.value = []
   } finally {
     isLoading.value = false
-    // 数据加载完成后滚动
-    scrollToTarget()
+
   }
 }
 
