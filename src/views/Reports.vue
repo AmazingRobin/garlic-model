@@ -174,7 +174,9 @@ async function fetchDynamicReports() {
   
   // Check if API URL is configured
   if (WORKER_API_URL.includes('YOUR_ACCOUNT')) {
-    console.warn('⚠️ Worker API URL is not configured. Please set VITE_WORKER_API_URL in your environment variables.')
+    if (import.meta.env.DEV) {
+      console.info('ℹ️ Worker API URL not configured. Using static data.')
+    }
     isLoading.value = false
     return
   }
