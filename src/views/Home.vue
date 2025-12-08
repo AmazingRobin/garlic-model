@@ -71,17 +71,18 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, watch } from 'vue'
+import { onMounted, watch, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+import { useHead } from '@vueuse/head'
 import Reports from '@/views/Reports.vue'
 import TechAnalysis from '@/views/TechAnalysis.vue'
 import Comparison from '@/views/Comparison.vue'
 import FAQ from '@/views/FAQ.vue'
 import About from '@/views/About.vue'
-import { updateMetaTags, injectSchema, generateArticleSchema } from '@/utils/seo'
+import { injectSchema, generateArticleSchema } from '@/utils/seo'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const route = useRoute()
 
 const scrollToSection = (id: string) => {
@@ -106,6 +107,47 @@ watch(() => route.hash, (newHash) => {
   }
 })
 
+// SEO Configuration using useHead for SSG support
+useHead({
+  title: computed(() => t('meta.title')),
+  meta: [
+    {
+      name: 'description',
+      content: computed(() => t('meta.description')),
+    },
+    // Open Graph
+    {
+      property: 'og:title',
+      content: computed(() => t('meta.title')),
+    },
+    {
+      property: 'og:description',
+      content: computed(() => t('meta.description')),
+    },
+    {
+      property: 'og:url',
+      content: 'https://garlic-model.com',
+    },
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+    // Twitter
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:title',
+      content: computed(() => t('meta.title')),
+    },
+    {
+      name: 'twitter:description',
+      content: computed(() => t('meta.description')),
+    },
+  ],
+})
+
 onMounted(() => {
   // Check for hash in URL and scroll to it
   if (route.hash) {
@@ -114,24 +156,6 @@ onMounted(() => {
       scrollToSection(id)
     }, 100) // Small delay to ensure DOM is ready
   }
-
-  // Update SEO
-  // Update SEO
-  const updateSEO = () => {
-    updateMetaTags({
-      title: t('meta.title'),
-      description: t('meta.description'),
-      url: 'https://garlic-model.com',
-      type: 'website'
-    })
-  }
-
-  updateSEO()
-
-  // Watch for locale changes to update SEO
-  watch(() => locale.value, () => {
-    updateSEO()
-  })
 
   // Add Article Schema
   const schema = generateArticleSchema({
