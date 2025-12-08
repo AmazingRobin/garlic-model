@@ -172,6 +172,13 @@ async function fetchDynamicReports() {
   isLoading.value = true
   apiError.value = ''
   
+  // Check if API URL is configured
+  if (WORKER_API_URL.includes('YOUR_ACCOUNT')) {
+    console.warn('⚠️ Worker API URL is not configured. Please set VITE_WORKER_API_URL in your environment variables.')
+    isLoading.value = false
+    return
+  }
+  
   try {
     const response = await fetch(WORKER_API_URL, {
       method: 'GET',

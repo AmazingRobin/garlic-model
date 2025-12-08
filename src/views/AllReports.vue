@@ -243,6 +243,13 @@ async function fetchDynamicReports() {
   window.scrollTo({ top: 0, behavior: 'auto' })
   apiError.value = ''
   
+  // Check if API URL is configured
+  if (WORKER_API_URL.includes('YOUR_ACCOUNT')) {
+    console.warn('⚠️ Worker API URL is not configured. Please set VITE_WORKER_API_URL in your environment variables.')
+    isLoading.value = false
+    return
+  }
+  
   try {
     const response = await fetch(WORKER_API_URL, {
       method: 'GET',
@@ -310,11 +317,10 @@ function formatLastUpdate(isoString: string): string {
 }
 
 // 移除 HTML 标签
+// 移除 HTML 标签 (SSR-safe)
 function stripHtml(html: string): string {
   if (!html) return ''
-  const tmp = document.createElement('DIV')
-  tmp.innerHTML = html
-  return tmp.textContent || tmp.innerText || ''
+  return html.replace(/<[^>]*>?/gm, '')
 }
 </script>
 
