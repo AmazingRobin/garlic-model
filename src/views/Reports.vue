@@ -237,11 +237,10 @@ function formatLastUpdate(isoString: string): string {
 }
 
 // 移除 HTML 标签
+// 移除 HTML 标签 (SSR-safe)
 function stripHtml(html: string): string {
   if (!html) return ''
-  const tmp = document.createElement('DIV')
-  tmp.innerHTML = html
-  return tmp.textContent || tmp.innerText || ''
+  return html.replace(/<[^>]*>?/gm, '')
 }
 
 

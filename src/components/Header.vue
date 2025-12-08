@@ -58,7 +58,7 @@ const handleNavClick = (path: string) => {
   isMobileMenuOpen.value = false
   
   // 解析路径和 hash
-  const [pathname, hash] = path.split('#')
+  const [, hash] = path.split('#')
   const targetHash = hash ? `#${hash}` : ''
   
   // 如果是纯路由跳转（如 /reports）
