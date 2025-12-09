@@ -11,27 +11,27 @@
       <div class="container-custom relative z-10">
         <div class="max-w-4xl mx-auto text-center">
           <!-- Icon -->
-          <div class="inline-block mb-8 animate-fade-in">
+          <div class="inline-block mb-8">
             <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center glow-effect mx-auto">
               <span class="text-6xl">🧄</span>
             </div>
           </div>
 
           <!-- Title -->
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6 animate-slide-up">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6">
             <span class="gradient-text">{{ t('home.hero.title') }}</span>
           </h1>
           
-          <p class="text-2xl md:text-3xl text-gray-300 mb-6 animate-slide-up font-display">
+          <p class="text-2xl md:text-3xl text-gray-300 mb-6 font-display">
             {{ t('home.hero.subtitle') }}
           </p>
 
-          <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto animate-slide-up">
+          <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
             {{ t('home.hero.description') }}
           </p>
 
           <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 animate-slide-up">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <a href="#reports" class="btn-primary" @click.prevent="scrollToSection('reports')">
               {{ t('home.hero.cta') }}
               <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

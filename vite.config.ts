@@ -5,14 +5,26 @@ import Sitemap from 'vite-plugin-sitemap'
 // 生成多语言路由
 const languages = ['en', 'zh', 'ja', 'ru', 'ko', 'fil', 'pt', 'de', 'fr', 'es']
 
+// 生成所有路由路径
+const generateRoutes = () => {
+  return languages.flatMap(lang => {
+    const prefix = lang === 'en' ? '' : `/${lang}`
+    return [
+      prefix + '/',
+      prefix + '/reports'
+    ]
+  })
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     Sitemap({
       hostname: 'https://garlic-model.com',
-      dynamicRoutes: languages.map(lang => lang === 'en' ? '/' : `/${lang}/`),
+      dynamicRoutes: generateRoutes(),
       readable: true,
+      lastmod: new Date(), // 强制更新 lastmod
     }),
   ],
   resolve: {
@@ -30,8 +42,7 @@ export default defineConfig({
     script: 'async',
     formatting: 'minify',
     includedRoutes() {
-      // Generate routes for all languages
-      return languages.map(lang => lang === 'en' ? '/' : `/${lang}/`)
+      return generateRoutes()
     },
     onFinished() {
       console.log('SSG build finished!')
