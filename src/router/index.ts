@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, createMemoryHistory, type RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home.vue'
+import CodeSpeed from '@/views/demo/CodeSpeed.vue'
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -18,6 +19,15 @@ export const routes: RouteRecordRaw[] = [
     meta: {
       title: 'OpenAI Garlic Model - Reports',
       description: 'Detailed reports and analysis about OpenAI\'s upcoming Garlic model.'
+    }
+  },
+  {
+    path: '/code',
+    name: 'code-speed-demo',
+    component: CodeSpeed,
+    meta: {
+      title: 'AI Model Coding Speed Comparison',
+      description: 'Compare OpenAI Garlic, Claude Opus, Gemini, and MiniMax coding speeds.'
     }
   },
   {

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-dark-900/50 border-t border-dark-800 mt-20">
+  <footer class="bg-dark-900/50 border-t border-dark-800">
     <div class="container-custom py-12">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
@@ -28,7 +28,7 @@
                 :to="link.path"
                 class="text-gray-400 hover:text-primary-400 transition-colors duration-200 text-sm"
               >
-                {{ t(link.label) }}
+                {{ link.label === 'Garlic Model' ? link.label : t(link.label) }}
               </router-link>
             </li>
           </ul>
@@ -93,7 +93,7 @@ import { useI18n } from 'vue-i18n'
 const { t } = useI18n()
 
 const quickLinks = [
-  { path: '/', label: 'nav.home' },
+  { path: '/', label: 'Garlic Model' },
   { path: '/reports', label: 'nav.reports' },
   { path: '/#tech-analysis', label: 'nav.techAnalysis' },
   { path: '/#comparison', label: 'nav.comparison' },

@@ -17,6 +17,7 @@ const navLinks = [
   { path: '/#comparison', label: 'nav.comparison' },
   { path: '/#faq', label: 'nav.faq' },
   { path: '/#about', label: 'nav.about' },
+  { path: '/code', label: 'Code Speed' },
 ]
 
 const isMobileMenuOpen = ref(false)
@@ -136,7 +137,7 @@ onUnmounted(() => {
             @click.prevent="handleNavClick(link.path)"
             class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-dark-800 transition-all duration-200 cursor-pointer"
           >
-            {{ t(link.label) }}
+            {{ link.label.startsWith('nav.') ? t(link.label) : link.label }}
           </a>
         </div>
 
@@ -216,7 +217,7 @@ onUnmounted(() => {
             @click.prevent="handleNavClick(link.path)"
             class="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-dark-800 transition-all duration-200 cursor-pointer"
           >
-            {{ t(link.label) }}
+            {{ link.label.startsWith('nav.') ? t(link.label) : link.label }}
           </a>
         </div>
       </transition>

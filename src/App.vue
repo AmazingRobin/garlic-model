@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col">
     <Header />
     <main class="flex-1">
       <router-view v-slot="{ Component }">

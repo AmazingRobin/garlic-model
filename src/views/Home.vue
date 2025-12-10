@@ -4,12 +4,31 @@
     <section id="home" class="relative overflow-hidden py-20 md:py-32">
       <!-- Background Effects -->
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-0 left-1/4 w-72 h-72 bg-purple-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob"></div>
-        <div class="absolute top-0 right-1/4 w-72 h-72 bg-yellow-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-32 left-1/3 w-72 h-72 bg-pink-500/20 rounded-full mix-blend-screen filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+        <!-- 动态网格背景 -->
+        <div class="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03]"></div>
         
-        <div class="absolute -top-1/2 -right-1/2 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-1/2 -left-1/2 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <!-- 呼吸光晕 -->
+        <div class="absolute -top-1/2 -right-1/2 w-[800px] h-[800px] bg-primary-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+        <div class="absolute -bottom-1/2 -left-1/2 w-[800px] h-[800px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse-slow delay-1000"></div>
+        
+        <!-- 浮动 AI 粒子 (模拟神经网络节点) -->
+        <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-primary-400 rounded-full animate-float opacity-50"></div>
+        <div class="absolute top-3/4 left-1/3 w-3 h-3 bg-cyan-400 rounded-full animate-float delay-500 opacity-40"></div>
+        <div class="absolute top-1/3 right-1/4 w-2 h-2 bg-purple-400 rounded-full animate-float delay-1000 opacity-60"></div>
+        <div class="absolute bottom-1/4 right-1/3 w-4 h-4 bg-blue-400 rounded-full animate-float delay-1500 opacity-30"></div>
+        
+        <!-- 连接线 (SVG) -->
+        <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(59,130,246);stop-opacity:0" />
+              <stop offset="50%" style="stop-color:rgb(168,85,247);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(59,130,246);stop-opacity:0" />
+            </linearGradient>
+          </defs>
+          <path d="M100,100 Q400,50 600,300 T1000,500" fill="none" stroke="url(#grad1)" stroke-width="2" class="animate-dash" />
+          <path d="M-100,600 Q300,400 500,800 T1200,200" fill="none" stroke="url(#grad1)" stroke-width="2" class="animate-dash delay-1000" />
+        </svg>
       </div>
 
       <div class="container-custom relative z-10">
@@ -23,7 +42,7 @@
 
           <!-- Title -->
           <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6">
-            <span class="gradient-text">{{ t('home.hero.title') }}</span>
+            <span class="gradient-text-animated">{{ t('home.hero.title') }}</span>
           </h1>
           
           <p class="text-2xl md:text-3xl text-gray-300 mb-6 font-display">
@@ -171,3 +190,51 @@ onMounted(() => {
   injectSchema(schema)
 })
 </script>
+
+<style scoped>
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(1.1); }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 8s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+.animate-float {
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes dash {
+  from { stroke-dasharray: 10, 20; stroke-dashoffset: 0; }
+  to { stroke-dasharray: 10, 20; stroke-dashoffset: -100; }
+}
+.animate-dash {
+  animation: dash 20s linear infinite;
+}
+
+.gradient-text-animated {
+  background: linear-gradient(
+    to right,
+    #fdfbf7 0%,   /* Garlic White */
+    #d8b4fe 25%,  /* Garlic Skin Purple */
+    #fdfbf7 50%,
+    #d8b4fe 75%,
+    #fdfbf7 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+</style>
